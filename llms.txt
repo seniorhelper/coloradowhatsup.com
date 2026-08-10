@@ -1,0 +1,25 @@
+# ColoradoWhatsUp.com
+
+> Long-form, source-cited guides to Colorado: outdoor ethics, state history, mountain
+> weather and altitude, seasonal water and fire conditions, climbing, and arts and science.
+> Published by Search Converts LLC. Edited by Zach Wennstedt, raised in Boulder, Colorado.
+
+## Editorial policy
+
+- Figures are attributed to the issuing agency (NWS, USGS, NRCS, CDOT, NPS, CPW, CGS).
+- Conditions-dependent claims carry the reporting period they came from.
+- No AI-generated review content, no fabricated statistics, no placeholder text.
+
+## Pages
+
+- [All About Colorado](https://coloradowhatsup.com/): homepage hub with six long-form articles, Colorado dial codes (511, 211, 811, *277), official agency resources, and an FAQ.
+- [Pack It In, Pack It Out: Keeping Colorado Colorado](https://coloradowhatsup.com/#leave-no-trace): Leave No Trace in practical Colorado terms — the extra trash bag habit, the seven principles translated for high altitude, and the five-step procedure for killing a campfire so it stays dead.
+- [Colorado At 150: What A Century And A Half Actually Built](https://coloradowhatsup.com/#colorado-150): Colorado statehood on August 1, 1876 through the 2026 sesquisemiquincentennial — the gold rush, the silver collapse of 1893, women's suffrage, Ludlow, the 10th Mountain Division and the Olympics Colorado turned down.
+- [Reading A Colorado Mountain Day Before It Reads You](https://coloradowhatsup.com/#mountain-day): How altitude, afternoon thunderstorms and the monsoon actually work in Colorado, why your phone forecast fails above treeline, and a working altitude and oxygen calculator.
+- [The 2026 Water Year: Why A Dry Winter Is Still Shaping Your Trip](https://coloradowhatsup.com/#water-year): Colorado snowpack hit 61% of median in February 2026, the worst in the modern record. What that does to rafting, fishing, fire bans, reservoirs, burn scars and aspen color.
+- [Boulders To Fourteeners: The Colorado Climbing Ladder](https://coloradowhatsup.com/#climbing): Bouldering, sport, trad and alpine climbing in Colorado — the V-scale and Yosemite Decimal System explained, all 58 fourteeners by class, and the access rules people keep breaking.
+- [The Other Colorado: Art, Science, Fossils And Dark Skies](https://coloradowhatsup.com/#other-colorado): Meow Wolf, the Clyfford Still Museum, Dinosaur Ridge, the NCAR Mesa Lab and thirteen International Dark Sky Parks — everything worth doing in Colorado that does not require boots.
+
+## Contact
+
+- Advertising inquiries and news tips: info@eyetoad.com
