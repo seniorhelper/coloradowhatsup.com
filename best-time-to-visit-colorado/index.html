@@ -1472,6 +1472,7 @@ h1.phero-h em{font-style:normal;color:var(--gold)}
       <ul class="tick">
         <li><a href="/things-to-do-in-colorado/">Things to do in Colorado</a> &mdash; 33 places, filterable by season, plus the 2026 permit and reservation rules.</li>
         <li><a href="/colorado-scenic-byways/">Colorado scenic byways</a> &mdash; all 26 routes sortable by surface, region and seasonal closure.</li>
+        <li><a href="/colorado-traction-law/">Colorado Traction Law</a> &mdash; the tire and chain rules for I-70 and the passes from September through May.</li>
         <li><a href="/#leave-no-trace">Pack it in, pack it out</a> &mdash; camping ethics and fire safety in a drought year.</li>
         <li><a href="https://coloradocampingspots.com/" rel="noopener">Colorado Camping Spots</a> &mdash; where to sleep, region by region.</li>
         <li><a href="https://actionglobalnews.com/" rel="noopener">Independent news coverage</a> &mdash; closures, fires and conditions as they happen.</li>
@@ -1483,7 +1484,7 @@ h1.phero-h em{font-style:normal;color:var(--gold)}
 <section class="sec" id="faq">
   <div class="wrap">
     <p class="slabel">Common questions</p>
-    <h2 class="rv" style="text-align:center;margin-bottom:38px">Byway Questions,<br>Answered Plainly</h2>
+    <h2 class="rv" style="text-align:center;margin-bottom:38px">Seasonal Questions,<br>Answered Plainly</h2>
         <div class="faq rv">
       <details open>
         <summary>What is the best time of year to visit Colorado?</summary>
@@ -1538,8 +1539,8 @@ h1.phero-h em{font-style:normal;color:var(--gold)}
     </div>
 
     <div class="formbox rv">
-      <form id="cwuForm" method="POST" novalidate>
-        <input type="hidden" name="_subject" value="ColoradoWhatsUp.com — New Inquiry">
+      <form id="cwuForm" method="POST" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
+        <input type="hidden" name="_subject" value="New lead — coloradowhatsup.com">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_source" value="coloradowhatsup.com/best-time-to-visit-colorado/">
@@ -1622,7 +1623,7 @@ h1.phero-h em{font-style:normal;color:var(--gold)}
           <li><a href="/colorado-scenic-byways/">Colorado Scenic Byways</a></li>
           <li><a href="/about-colorado/">About Colorado</a></li>
           <li><a href="/#resources">Colorado Resources</a></li>
-          <li><a href="/sitemap.html">Sitemap</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
       <div>
@@ -1646,7 +1647,7 @@ h1.phero-h em{font-style:normal;color:var(--gold)}
 
     <div class="ftr-bot">
       <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. All rights reserved.</span>
-      <span>Edited by Zach Wennstedt &middot; Denver, Colorado &middot; <a href="#contact">info@eyetoad.com</a></span>
+      <span>Edited by Zach Wennstedt &middot; Denver, Colorado &middot; <a href="#contact">Send us a message</a></span>
     </div>
   </div>
 </footer>
@@ -1776,81 +1777,53 @@ h1.phero-h em{font-style:normal;color:var(--gold)}
     showMonth(nowIdx, false);
   }
 
-  /* ---------- FormSubmit — two-stage transport ---------- */
-  function buildAction(ajax){
-    var user = 'info', host = ['eyetoad','com'].join('.');
-    return 'https://formsubmit.co/' + (ajax ? 'ajax/' : '') + user + '@' + host;
-  }
-
-  var form = $('#cwuForm'), fBtn = $('#fBtn'), fMsg = $('#fMsg'), tsField = $('#_ts');
-  if(tsField) tsField.value = String(Date.now());
-
-  if(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-
-      var honey = $('#_honey');
-      if(honey && honey.value.trim() !== ''){
-        fMsg.className = 'fmsg ok';
-        fMsg.textContent = 'Thanks — your message has been sent.';
-        form.reset();
-        return;
-      }
-
-      var started = parseInt(tsField ? tsField.value : '0', 10);
-      if(started && (Date.now() - started) < 4000){
-        fMsg.className = 'fmsg bad';
-        fMsg.textContent = 'Give that another moment, then send it again.';
-        return;
-      }
-
-      if(!form.checkValidity()){
-        fMsg.className = 'fmsg bad';
-        fMsg.textContent = 'Please fill in your name, a valid email, what this is about, and a message.';
-        var bad = form.querySelector(':invalid');
-        if(bad) bad.focus();
-        return;
-      }
-
-      fBtn.disabled = true;
-      fBtn.textContent = 'Sending\u2026';
-      fMsg.className = 'fmsg';
-      fMsg.textContent = '';
-
-      fetch(buildAction(true), {
-        method:'POST', body:new FormData(form), headers:{'Accept':'application/json'}
-      })
-      .then(function(r){ return r.ok ? r.json() : Promise.reject(0); })
-      .then(function(){
-        fMsg.className = 'fmsg ok';
-        fMsg.textContent = 'Sent. We have it — expect a reply from info@eyetoad.com.';
-        form.reset();
-        if(tsField) tsField.value = String(Date.now());
-        fBtn.disabled = false; fBtn.textContent = 'Send It';
-      })
-      .catch(function(){
-        try{
-          form.setAttribute('action', buildAction(false));
-          form.setAttribute('target', 'cwuSink');
-          HTMLFormElement.prototype.submit.call(form);
-          fMsg.className = 'fmsg ok';
-          fMsg.textContent = 'Sent. If you do not hear back within one business day, email info@eyetoad.com directly.';
-          form.reset();
-          if(tsField) tsField.value = String(Date.now());
-        }catch(err){
-          fMsg.className = 'fmsg bad';
-          fMsg.textContent = 'That did not go through. Please email info@eyetoad.com directly.';
-        }
-        form.removeAttribute('action');
-        form.removeAttribute('target');
-        fBtn.disabled = false; fBtn.textContent = 'Send It';
-      });
-    });
-  }
-
+/* ---------- lead form: see handler before </body> ---------- */
   var yr = $('#yr');
   if(yr) yr.textContent = new Date().getFullYear();
 
+})();
+</script>
+<script>
+/* Lead form: FormSubmit AJAX, address assembled at runtime */
+(function(){
+  document.querySelectorAll('a.eml[data-a]').forEach(function(a){
+    var e = atob(a.getAttribute('data-a')) + String.fromCharCode(64) + atob(a.getAttribute('data-b'));
+    a.href = 'mailto:' + e; a.textContent = e;
+  });
+  var form = document.getElementById('cwuForm');
+  if(!form) return;
+  var loadedAt = Date.now();
+  var btn = form.querySelector('[type="submit"]');
+  var label = btn ? btn.textContent : '';
+  function show(ok, text){
+    var m = document.getElementById('fMsg'); if(!m) return;
+    m.className = 'fmsg ' + (ok ? 'ok' : 'bad'); m.textContent = text;
+  }
+  function addr(){ return atob(form.getAttribute('data-a')) + String.fromCharCode(64) + atob(form.getAttribute('data-b')); }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var hp = form.querySelectorAll('input[name="_honey"]');
+    for(var i = 0; i < hp.length; i++){ if(hp[i].value.trim() !== '') return; }
+    if(Date.now() - loadedAt < 3500){ show(false, 'Give the form a moment, then send again.'); return; }
+    var req = form.querySelectorAll('[required]');
+    for(var j = 0; j < req.length; j++){
+      var el = req[j], v = (el.value || '').trim();
+      if(!v || (el.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v))){
+        show(false, 'Please fill in every required field.'); el.focus(); return;
+      }
+    }
+    if(btn){ btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+    var data = new FormData(form);
+    fetch('https://formsubmit.co/ajax/' + addr(), {method:'POST', headers:{Accept:'application/json'}, body:data})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(j){
+        if(j && (j.success === false || j.success === 'false')) throw 0;
+        show(true, "Sent. We'll get back to you shortly.");
+        form.reset();
+      })
+      .catch(function(){ show(false, 'That did not go through. Please call 1-800-481-8638.'); })
+      .then(function(){ if(btn){ btn.disabled = false; btn.textContent = label; } });
+  });
 })();
 </script>
 </body>
