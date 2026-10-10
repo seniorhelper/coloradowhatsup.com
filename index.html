@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>All About Colorado | Guide to Camping, Hiking, Climbing, Events &amp; Culture</title>
-<meta name="description" content="All about Colorado in one place. Long-form guides to camping ethics, the state's 150th year, mountain weather, the 2026 water year, climbing, arts and science, plus official Colorado resources and live conditions.">
+<meta name="google-adsense-account" content="ca-pub-3561679124556057">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561679124556057" crossorigin="anonymous"></script>
+<title>Colorado What's Up: Events, Festivals &amp; Colorado Guides</title>
+<meta name="description" content="What is happening in Colorado: festivals, seasonal events and a month-by-month calendar, plus long reads on altitude, history, climbing and camping ethics.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Zach Wennstedt">
 <link rel="canonical" href="https://coloradowhatsup.com/">
@@ -14,13 +16,15 @@
 <meta property="og:title" content="All About Colorado | Camping, Hiking, Climbing, Events &amp; Culture">
 <meta property="og:description" content="Long-form Colorado guides written from the ground up: camping ethics, the state's 150th year, mountain weather, the 2026 water year, climbing and culture.">
 <meta property="og:url" content="https://coloradowhatsup.com/">
-<meta property="og:image" content="https://coloradowhatsup.com/images/colorado.jpg">
+<meta property="og:image" content="https://coloradowhatsup.com/images/og-coloradowhatsup.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Colorado mountain landscape">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="All About Colorado | Camping, Hiking, Climbing, Events &amp; Culture">
 <meta name="twitter:description" content="Long-form Colorado guides: camping ethics, the state's 150th year, mountain weather, the 2026 water year, climbing and culture.">
-<meta name="twitter:image" content="https://coloradowhatsup.com/images/colorado.jpg">
+<meta name="twitter:image" content="https://coloradowhatsup.com/images/og-coloradowhatsup.png">
 
 <meta name="geo.region" content="US-CO">
 <meta name="geo.placename" content="Colorado">
@@ -32,7 +36,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="/images/fall-river-reservoir-colorado-lakes.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/web/fall-river-reservoir-colorado-lakes-1600.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -416,6 +420,87 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
   body{background:#fff;color:#000;font-size:12pt}
   .topo-bg{display:none}
 }
+
+/* ===== 2026-10 upgrade: white header bar, layout fixes ===== */
+.hdr,.hdr.solid{position:sticky;top:0;left:auto;right:auto;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(20,32,43,.07);backdrop-filter:none;-webkit-backdrop-filter:none}
+.hdr-in{padding:8px 22px;gap:18px}
+.brand img{width:auto;height:76px;object-fit:contain;object-position:center}
+.nav{gap:2px}
+.nav a{color:var(--ink);border:1px solid transparent;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;font-size:17px;padding:10px 10px}
+.nav a:hover,.nav a:focus-visible{background:var(--paper-2);border-color:var(--line);color:#A3192A}
+.nav a[aria-current="page"]{color:#A3192A;box-shadow:inset 0 -3px 0 var(--gold)}
+.burger{background:#fff;border:1px solid var(--line);backdrop-filter:none;color:var(--ink)}
+.burger span{background:var(--ink)}
+.hero{min-height:calc(100svh - 93px);flex-direction:column;align-items:stretch;justify-content:flex-end}
+.hero-in{padding:72px 0 48px}
+.phero-in{padding:84px 0 52px}
+.mhero-in{padding:96px 0 90px}
+.ftr-grid5{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}
+.ftr-p a{color:var(--gold)}
+.cta-band{text-align:center}
+.cta-band .gbtn{margin-top:8px}
+@media(max-width:1180px){
+  .nav{display:none}
+  .burger{display:block}
+  .nav.open{display:flex;position:fixed;left:0;right:0;top:var(--hdr-h,93px);bottom:0;flex-direction:column;align-items:stretch;gap:0;
+    background:#fff;padding:10px 18px 28px;overflow:auto;z-index:90;max-height:none;border-top:1px solid var(--line);backdrop-filter:none}
+  .nav.open a{color:var(--ink);font-size:22px;padding:15px 6px;border:0;border-bottom:1px solid var(--line);background:none;backdrop-filter:none}
+  .ftr-grid5{grid-template-columns:1fr 1fr 1fr}
+  .ftr-grid5>div:first-child{grid-column:1/-1}
+}
+@media(max-width:768px){
+  .brand img{height:60px;width:auto}
+  .ftr-logo{height:110px;width:auto}
+  .hero{min-height:auto}
+  .hero-in{padding:56px 0 34px}
+  .phero-in{padding:60px 0 36px}
+  .mhero-in{padding:70px 0 64px}
+  .ftr-grid5{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .ftr-grid5{grid-template-columns:1fr 1fr;gap:26px 18px}
+  .hero-foot{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ===== components for event + policy pages ===== */
+.evlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin:8px 0 34px}
+.ev{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 22px 18px;background:var(--paper)}
+.sec.tone .ev{background:var(--paper-2)}
+.ev-when{font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#A3192A;margin:0 0 8px}
+.ev h3{margin:0 0 6px;font-size:1.42rem;line-height:1.05}
+.ev-where{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin:0 0 10px}
+.ev p{font-size:1rem;line-height:1.6;margin:0 0 8px}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin:10px 0 30px}
+.card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 22px 24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:background .2s}
+a.card:hover{background:var(--paper-2)}
+.card .quad-n{margin:0 0 10px}
+.card h3{font-size:1.36rem;margin:0 0 10px;line-height:1.05}
+.card p{font-size:.98rem;line-height:1.58;color:var(--ink-2);margin:0 0 14px;flex:1}
+.srcs{font-size:.96rem;line-height:1.55;padding-left:22px}
+.srcs li{margin:0 0 9px}
+.srcs .sn{color:var(--ink-3);font-family:var(--mono);font-size:12px;display:block}
+.read h2{margin-top:10px}
+.pol h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin:42px 0 14px}
+.pol h2:first-child{margin-top:0}
+.byline-s{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.78);margin:18px 0 0;line-height:1.6;letter-spacing:.04em}
+.formbox.light{background:var(--ink)}
+.formbox a{color:var(--gold)}
+@media(max-width:900px){.cards3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.evlist,.cards3{grid-template-columns:1fr}.ev{padding:20px 18px 16px}}
+@media(max-width:600px){
+  .tbl-wrap.stack{border:0;overflow:visible}
+  .stack table,.stack tbody,.stack tr,.stack td{display:block;width:100%}
+  .stack thead{position:absolute;left:-9999px}
+  .stack tr{border:1px solid var(--line);margin:0 0 12px;padding:6px 0}
+  .stack td{border:0;padding:6px 14px}
+  .stack td::before{content:attr(data-label);display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:2px}
+  .stack td:first-child{font-weight:700}
+}
+
+.past-tag{color:var(--ink-3)}
+.earlier{margin:-10px 0 26px;border:1px solid var(--line);padding:0 14px}
+.earlier summary{cursor:pointer;padding:12px 0;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.earlier .tbl-wrap{margin:0 0 14px}
 </style>
 <script type="application/ld+json">
 {
@@ -532,162 +617,6 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
       ]
     },
     {
-      "@type": "Article",
-      "@id": "https://coloradowhatsup.com/#leave-no-trace",
-      "headline": "Pack It In, Pack It Out: Keeping Colorado Colorado",
-      "description": "Leave No Trace in practical Colorado terms — the extra trash bag habit, the seven principles translated for high altitude, and the five-step procedure for killing a campfire so it stays dead.",
-      "articleSection": "Outdoor Ethics",
-      "wordCount": 1900,
-      "keywords": "leave no trace colorado, colorado camping etiquette, how to put out a campfire, pack it in pack it out",
-      "url": "https://coloradowhatsup.com/#leave-no-trace",
-      "mainEntityOfPage": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "author": {
-        "@id": "https://coloradowhatsup.com/#zach"
-      },
-      "publisher": {
-        "@id": "https://coloradowhatsup.com/#org"
-      },
-      "datePublished": "2026-08-10",
-      "dateModified": "2026-08-10",
-      "inLanguage": "en-US",
-      "position": 1
-    },
-    {
-      "@type": "Article",
-      "@id": "https://coloradowhatsup.com/#colorado-150",
-      "headline": "Colorado At 150: What A Century And A Half Actually Built",
-      "description": "Colorado statehood on August 1, 1876 through the 2026 sesquisemiquincentennial — the gold rush, the silver collapse of 1893, women's suffrage, Ludlow, the 10th Mountain Division and the Olympics Colorado turned down.",
-      "articleSection": "Colorado History",
-      "wordCount": 1850,
-      "keywords": "colorado 150th anniversary, why is colorado called the centennial state, colorado history, colorado statehood 1876",
-      "url": "https://coloradowhatsup.com/#colorado-150",
-      "mainEntityOfPage": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "author": {
-        "@id": "https://coloradowhatsup.com/#zach"
-      },
-      "publisher": {
-        "@id": "https://coloradowhatsup.com/#org"
-      },
-      "datePublished": "2026-08-10",
-      "dateModified": "2026-08-10",
-      "inLanguage": "en-US",
-      "position": 2
-    },
-    {
-      "@type": "Article",
-      "@id": "https://coloradowhatsup.com/#mountain-day",
-      "headline": "Reading A Colorado Mountain Day Before It Reads You",
-      "description": "How altitude, afternoon thunderstorms and the monsoon actually work in Colorado, why your phone forecast fails above treeline, and a working altitude and oxygen calculator.",
-      "articleSection": "Outdoor Safety",
-      "wordCount": 1850,
-      "keywords": "altitude sickness colorado, colorado monsoon season, hiking safety colorado, effective oxygen at altitude",
-      "url": "https://coloradowhatsup.com/#mountain-day",
-      "mainEntityOfPage": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "author": {
-        "@id": "https://coloradowhatsup.com/#zach"
-      },
-      "publisher": {
-        "@id": "https://coloradowhatsup.com/#org"
-      },
-      "datePublished": "2026-08-10",
-      "dateModified": "2026-08-10",
-      "inLanguage": "en-US",
-      "position": 3
-    },
-    {
-      "@type": "Article",
-      "@id": "https://coloradowhatsup.com/#water-year",
-      "headline": "The 2026 Water Year: Why A Dry Winter Is Still Shaping Your Trip",
-      "description": "Colorado snowpack hit 61% of median in February 2026, the worst in the modern record. What that does to rafting, fishing, fire bans, reservoirs, burn scars and aspen color.",
-      "articleSection": "Colorado Conditions",
-      "wordCount": 1850,
-      "keywords": "colorado drought 2026, colorado snowpack, colorado fire ban, colorado river conditions",
-      "url": "https://coloradowhatsup.com/#water-year",
-      "mainEntityOfPage": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "author": {
-        "@id": "https://coloradowhatsup.com/#zach"
-      },
-      "publisher": {
-        "@id": "https://coloradowhatsup.com/#org"
-      },
-      "datePublished": "2026-08-10",
-      "dateModified": "2026-08-10",
-      "inLanguage": "en-US",
-      "position": 4
-    },
-    {
-      "@type": "Article",
-      "@id": "https://coloradowhatsup.com/#climbing",
-      "headline": "Boulders To Fourteeners: The Colorado Climbing Ladder",
-      "description": "Bouldering, sport, trad and alpine climbing in Colorado — the V-scale and Yosemite Decimal System explained, all 58 fourteeners by class, and the access rules people keep breaking.",
-      "articleSection": "Climbing",
-      "wordCount": 1850,
-      "keywords": "colorado climbing, how many 14ers in colorado, best bouldering colorado, colorado 14er classes",
-      "url": "https://coloradowhatsup.com/#climbing",
-      "mainEntityOfPage": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "author": {
-        "@id": "https://coloradowhatsup.com/#zach"
-      },
-      "publisher": {
-        "@id": "https://coloradowhatsup.com/#org"
-      },
-      "datePublished": "2026-08-10",
-      "dateModified": "2026-08-10",
-      "inLanguage": "en-US",
-      "position": 5
-    },
-    {
-      "@type": "Article",
-      "@id": "https://coloradowhatsup.com/#other-colorado",
-      "headline": "The Other Colorado: Art, Science, Fossils And Dark Skies",
-      "description": "Meow Wolf, the Clyfford Still Museum, Dinosaur Ridge, the NCAR Mesa Lab and thirteen International Dark Sky Parks — everything worth doing in Colorado that does not require boots.",
-      "articleSection": "Arts & Culture",
-      "wordCount": 1850,
-      "keywords": "things to do in colorado besides hiking, colorado museums, colorado dark sky parks, dinosaur ridge colorado",
-      "url": "https://coloradowhatsup.com/#other-colorado",
-      "mainEntityOfPage": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "isPartOf": {
-        "@id": "https://coloradowhatsup.com/#webpage"
-      },
-      "author": {
-        "@id": "https://coloradowhatsup.com/#zach"
-      },
-      "publisher": {
-        "@id": "https://coloradowhatsup.com/#org"
-      },
-      "datePublished": "2026-08-10",
-      "dateModified": "2026-08-10",
-      "inLanguage": "en-US",
-      "position": 6
-    },
-    {
       "@type": "ItemList",
       "@id": "https://coloradowhatsup.com/#guides",
       "name": "The Colorado Field Guide — six long reads",
@@ -698,37 +627,37 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
           "@type": "ListItem",
           "position": 1,
           "name": "Pack It In, Pack It Out: Keeping Colorado Colorado",
-          "url": "https://coloradowhatsup.com/#leave-no-trace"
+          "url": "https://coloradowhatsup.com/leave-no-trace-colorado/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Colorado At 150: What A Century And A Half Actually Built",
-          "url": "https://coloradowhatsup.com/#colorado-150"
+          "url": "https://coloradowhatsup.com/colorado-150th-anniversary-history/"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Reading A Colorado Mountain Day Before It Reads You",
-          "url": "https://coloradowhatsup.com/#mountain-day"
+          "url": "https://coloradowhatsup.com/colorado-altitude-mountain-weather/"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "The 2026 Water Year: Why A Dry Winter Is Still Shaping Your Trip",
-          "url": "https://coloradowhatsup.com/#water-year"
+          "url": "https://coloradowhatsup.com/colorado-2026-water-year-drought/"
         },
         {
           "@type": "ListItem",
           "position": 5,
           "name": "Boulders To Fourteeners: The Colorado Climbing Ladder",
-          "url": "https://coloradowhatsup.com/#climbing"
+          "url": "https://coloradowhatsup.com/colorado-climbing-guide/"
         },
         {
           "@type": "ListItem",
           "position": 6,
           "name": "The Other Colorado: Art, Science, Fossils And Dark Skies",
-          "url": "https://coloradowhatsup.com/#other-colorado"
+          "url": "https://coloradowhatsup.com/colorado-museums-science-dark-skies/"
         }
       ]
     },
@@ -784,7 +713,7 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
           "name": "Do I need a reservation for Rocky Mountain National Park?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, during the timed entry season. For 2026 the system runs from May 22 into mid-October, with two permit types: Timed Entry+ Bear Lake Road (5 a.m. to 6 p.m., ending October 18) and standard Timed Entry for the rest of the park (9 a.m. to 2 p.m.). Reservations are booked on Recreation.gov for a $2 processing fee. Additional slots are released at 7 p.m. Mountain Time the night before each arrival date."
+            "text": "Yes, during the timed entry season. For 2026 the system runs from May 22 into mid-October, with two permit types: Timed Entry+ Bear Lake Road (5 a.m. to 6 p.m., ending October 19) and standard Timed Entry for the rest of the park (9 a.m. to 2 p.m.). Reservations are booked on Recreation.gov for a $2 processing fee. Additional slots are released at 7 p.m. Mountain Time the night before each arrival date."
           }
         },
         {
@@ -829,22 +758,22 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
 <div class="topo-bg" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to main content</a>
 
-<header class="hdr" id="hdr">
+<header class="hdr solid" id="hdr">
   <div class="hdr-in">
-    <a class="brand" href="https://coloradowhatsup.com/" aria-label="Colorado What's Up home">
-      <img src="/images/colorado-whats-up-logo.png" width="300" height="102" alt="Colorado What's Up" fetchpriority="high">
+    <a class="brand" href="/" aria-label="Colorado What's Up home">
+      <img src="/images/web/colorado-whats-up-logo.png" width="328" height="180" alt="Colorado What's Up" fetchpriority="high">
     </a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" id="nav" aria-label="Main">
-      <a href="#field-guide">Articles</a>
-      <a href="/things-to-do-in-colorado/">Things To Do</a>
-      <a href="/colorado-scenic-byways/">Byways</a>
+      <a href="/colorado-events-calendar/">Events Calendar</a>
+      <a href="/colorado-music-festivals/">Music</a>
+      <a href="/colorado-food-and-drink-festivals/">Food &amp; Drink</a>
+      <a href="/colorado-film-and-arts-festivals/">Film &amp; Arts</a>
+      <a href="/colorado-winter-festivals/">Winter</a>
+      <a href="/colorado-guides/">Guides</a>
       <a href="/best-time-to-visit-colorado/">When To Go</a>
-      <a href="/about-colorado/">About Colorado</a>
-      <a href="#resources">Resources</a>
-      <a class="nav-cta" href="#contact">Advertise / Tips</a>
     </nav>
   </div>
 </header>
@@ -852,7 +781,7 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
 <section class="hero" id="top">
   <div class="hero-media" aria-hidden="true">
     <video id="heroVid" autoplay muted loop playsinline preload="metadata"
-           poster="/images/fall-river-reservoir-colorado-lakes.jpg"
+           poster="/images/web/fall-river-reservoir-colorado-lakes-1600.jpg"
            aria-hidden="true" tabindex="-1" disablepictureinpicture>
       <source src="/images/fall-river-reservoir-creek-Colorado-video.mp4" type="video/mp4">
     </video>
@@ -878,10 +807,11 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
     <div class="wrap">
       <p class="eyebrow">Colorado &middot; Established August 1, 1876 &middot; Year 150</p>
       <h1 class="hero-h">All About<em>Colorado</em></h1>
-      <p class="hero-sub">Six long reads on the state we actually live in &mdash; how to camp here without wrecking it, what 150 years built, how to read a mountain day, why the 2026 water year changes your plans, where to climb, and the Colorado that has nothing to do with hiking boots.</p>
+      <p class="hero-sub">What is happening in Colorado &mdash; festivals, seasonal events and a month-by-month calendar &mdash; plus six long reads on the state we actually live in: how to camp here without wrecking it, what 150 years built, how to read a mountain day, why the 2026 water year changes your plans, where to climb, and the Colorado that has nothing to do with hiking boots.</p>
       <div class="hero-btns">
         <a class="gbtn solid" href="#field-guide">Read The Guides</a>
-        <a class="gbtn" href="#resources">Colorado Resources</a>
+        <a class="gbtn" href="#whats-on">What's On Now</a>
+        <a class="gbtn" href="/colorado-events-calendar/">Events Calendar</a>
       </div>
     </div>
   </div>
@@ -953,10 +883,36 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
   </div>
 </section>
 
+<section class="sec tone" id="whats-on">
+  <div class="wrap">
+    <p class="slabel">What's on now &mdash; updated October 10, 2026</p>
+    <h2 class="rv">What's Happening In Colorado<br>This Fall And Winter</h2>
+    <div class="read rv">
+      <p class="lede">Colorado's calendar turns over fast in October. The beer festival and the last of the aspens give way to ski openings, holiday parades and the January stock show. These are the dated events we could confirm with the organizers as of this update.</p>
+    </div>
+    <div class="rv">
+<div class="evlist">
+<div class="ev"><p class="ev-when">Oct 10&ndash;11, 2026</p><h3>Great American Beer Festival</h3><p class="ev-where">Levitt Pavilion, south Denver</p><p>The Brewers Association moved the festival outdoors for 2026, the first time it has been held outside the Colorado Convention Center in its history. Saturday and Sunday afternoon sessions; check <a href="https://www.greatamericanbeerfestival.com/" rel="noopener">greatamericanbeerfestival.com</a> for tickets and rules.</p></div>
+<div class="ev"><p class="ev-when">Oct 16&ndash;18, 2026</p><h3>Telluride Horror Show</h3><p class="ev-where">Telluride</p><p>The 17th edition of the San Juans' October genre film festival, with a free literary program alongside the screenings. Details at <a href="https://www.telluridehorrorshow.com/" rel="noopener">telluridehorrorshow.com</a>.</p></div>
+<div class="ev"><p class="ev-when">Late Oct &ndash; early Nov</p><h3>Denver Film Festival</h3><p class="ev-where">Sie FilmCenter and venues across Denver</p><p>The 49th edition of Denver Film's flagship festival. Published listings disagree on the exact 2026 window, so confirm screenings at <a href="https://www.denverfilm.org/" rel="noopener">denverfilm.org</a>.</p></div>
+<div class="ev"><p class="ev-when">Early November</p><h3>Ski season openings</h3><p class="ev-where">I-70 and Summit County</p><p>Vail Resorts announced Breckenridge and Copper Mountain for Nov. 6 and Vail Mountain for Nov. 13, with Keystone aiming for October. Every date depends on snow and snowmaking temperatures.</p></div>
+<div class="ev"><p class="ev-when">2nd Saturday of November</p><h3>Georgetown Bighorn Sheep Festival</h3><p class="ev-where">Georgetown</p><p>A small community festival built around the bighorn herd that lives on the cliffs above Georgetown Lake. See the <a href="/colorado-wildlife-watching-calendar/">wildlife calendar</a> for the viewing station.</p></div>
+<div class="ev"><p class="ev-when">Dec 5, 2026</p><h3>9NEWS Parade of Lights</h3><p class="ev-where">Downtown Denver</p><p>The 52nd annual parade, free to watch along the downtown route. Route and start time are posted by the <a href="https://www.downtowndenver.com/parade-of-lights" rel="noopener">Downtown Denver Partnership</a>.</p></div>
+<div class="ev"><p class="ev-when">Dec 17&ndash;19, 2026</p><h3>Ullr Fest</h3><p class="ev-where">Breckenridge</p><p>Breckenridge's 62nd winter festival in honor of the Norse god of snow, with the Ullr parade down Main Street. Schedule at <a href="https://gobreck.com/experience-breckenridge/festivals-and-events/ullr-fest/" rel="noopener">gobreck.com</a>.</p></div>
+<div class="ev"><p class="ev-when">Jan 9&ndash;24, 2027</p><h3>National Western Stock Show</h3><p class="ev-where">National Western Complex, Denver</p><p>The 121st stock show, rodeo and livestock exhibition. More in our <a href="/colorado-rodeos-fairs-western-events/">rodeos and fairs guide</a>.</p></div>
+<div class="ev"><p class="ev-when">Jan 21&ndash;31, 2027</p><h3>Sundance Film Festival in Boulder</h3><p class="ev-where">Boulder</p><p>The first Sundance Film Festival held in Colorado, with screenings across eleven Boulder theaters. See our <a href="/colorado-film-and-arts-festivals/">film and arts festivals guide</a>.</p></div>
+</div>
+    </div>
+    <div class="read rv">
+      <p class="note">Dates come from each organizer's own announcements and the Vail Resorts 2026&ndash;27 opening schedule. Events move, sell out and change venues, so check the linked official site before you travel. For the full year, see the <a href="/colorado-events-calendar/">month-by-month Colorado events calendar</a>.</p>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="datebook">
   <div class="wrap">
     <p class="slabel">The datebook</p>
-    <h2 class="rv">What's Still Ahead In Colorado's 150th Year</h2>
+    <h2 class="rv">Colorado's 150th Year: The 2026 Datebook</h2>
     <div class="read rv">
       <div class="answer">
         <p class="a-q">What is happening in Colorado in 2026?</p>
@@ -966,14 +922,10 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
     <div class="read rv">
       <div class="tbl-wrap">
         <table>
-          <caption class="hp">Colorado events and seasonal windows, late 2026</caption>
+          <caption class="hp">Colorado events and seasonal windows still ahead in 2026</caption>
           <thead><tr><th scope="col">When</th><th scope="col">What</th><th scope="col">Where</th></tr></thead>
           <tbody>
-            <tr><td>Aug 26&ndash;29</td><td>Denver Food + Wine Festival, 22nd annual &mdash; Grand Tasting Aug 29</td><td>Denver</td></tr>
-            <tr><td>Sep 1, 3, 7</td><td>Stories in the Sky drone shows at the State Fair; Westernaires exhibition Sep 1</td><td>Pueblo</td></tr>
-            <tr><td>Mid&ndash;late Sep</td><td>Aspen peak above 10,000 ft &mdash; earlier than usual in a drought year</td><td>High country</td></tr>
             <tr><td>Sep&ndash;Oct</td><td>Elk rut and bugling, dawn and dusk</td><td>Estes Park, Grand Lake</td></tr>
-            <tr><td>Late Sep&ndash;early Oct</td><td>Aspen peak at 8,000&ndash;9,500 ft &mdash; Kenosha and Guanella passes</td><td>Front Range foothills</td></tr>
             <tr><td>Oct 13</td><td>Last day of RMNP "rest of park" timed entry for 2026</td><td>Rocky Mountain NP</td></tr>
             <tr><td>Oct 19</td><td>Last day of RMNP Bear Lake Road corridor timed entry</td><td>Rocky Mountain NP</td></tr>
             <tr><td>Through Nov 20</td><td>Long Table community meals, statewide 150th program</td><td>Statewide</td></tr>
@@ -981,86 +933,63 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
           </tbody>
         </table>
       </div>
-      <p class="note">Sources: America 250&ndash;Colorado 150 Commission, History Colorado, Colorado State Fair, National Park Service. RMNP timed entry dates from the park's February 2026 announcement. Foliage windows are estimates &mdash; see the water year article below for why 2026 is running early.</p>
+      <details class="earlier">
+        <summary>Earlier in 2026 (past dates)</summary>
+        <div class="tbl-wrap"><table><caption class="hp">Colorado events earlier in 2026</caption><thead><tr><th scope="col">When</th><th scope="col">What</th><th scope="col">Where</th></tr></thead><tbody>
+            <tr><td>Aug 26&ndash;29 <span class="past-tag">(past)</span></td><td>Denver Food + Wine Festival, 22nd annual &mdash; Grand Tasting Aug 29</td><td>Denver</td></tr>
+            <tr><td>Sep 1, 3, 7 <span class="past-tag">(past)</span></td><td>Stories in the Sky drone shows at the State Fair; Westernaires exhibition Sep 1</td><td>Pueblo</td></tr>
+            <tr><td>Mid&ndash;late Sep <span class="past-tag">(past)</span></td><td>Aspen peak above 10,000 ft &mdash; earlier than usual in a drought year</td><td>High country</td></tr>
+            <tr><td>Late Sep&ndash;early Oct <span class="past-tag">(past)</span></td><td>Aspen peak at 8,000&ndash;9,500 ft &mdash; Kenosha and Guanella passes</td><td>Front Range foothills</td></tr>
+          </tbody></table></div>
+      </details>
+      <p class="note">Sources: America 250&ndash;Colorado 150 Commission, History Colorado, Colorado State Fair, National Park Service. RMNP timed entry dates from the park's February 2026 announcement. Foliage windows are estimates &mdash; see <a href="/colorado-2026-water-year-drought/">the water year article</a> for why 2026 is running early.</p>
       <p>The commemoration is genuinely statewide, not a Denver event. History Colorado's digital passport program is built to push people toward small towns and businesses rather than the same four trailheads. If you have been meaning to drive somewhere in Colorado you have never been, this is the year the state is actively rewarding it.</p>
       <p>For the day-to-day version of this &mdash; road closures, wildfire smoke, what opened this week &mdash; we also point readers to <a href="https://actionglobalnews.com/" rel="noopener">independent news</a> coverage rather than pretending a guide site can keep up with a newsroom.</p>
     </div>
   </div>
 </section>
 
-<section class="sec tone tight">
-  <div class="wrap">
-    <p class="ad-lab">Sponsored</p>
-    <a class="ad-elev" href="https://www.eyetoad.com/" rel="noopener">
-      <svg viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true">
-        <defs>
-          <linearGradient id="aeFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#E8A33D" stop-opacity=".26"/>
-            <stop offset="100%" stop-color="#E8A33D" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <path d="M0 250 L0 214 L70 206 L150 218 L230 190 L310 198 L400 160 L470 172 L560 138 L640 150 L730 104 L810 118 L900 62 L980 74 L1060 28 L1130 40 L1200 8 L1200 260 L0 260 Z" fill="url(#aeFill)"/>
-        <path d="M0 214 L70 206 L150 218 L230 190 L310 198 L400 160 L470 172 L560 138 L640 150 L730 104 L810 118 L900 62 L980 74 L1060 28 L1130 40 L1200 8"
-              fill="none" stroke="#E8A33D" stroke-width="2.5"/>
-        <g stroke="#ffffff" stroke-opacity=".16" stroke-width="1">
-          <line x1="0" y1="70" x2="1200" y2="70"/><line x1="0" y1="130" x2="1200" y2="130"/><line x1="0" y1="190" x2="1200" y2="190"/>
-        </g>
-        <circle cx="1200" cy="8" r="7" fill="#C22032"/>
-      </svg>
-      <div class="ad-elev-in">
-        <div>
-          <p class="ae-k">Eye To Ad Media &middot; Denver &middot; Since 2012</p>
-          <h3>Getting To The Top In Colorado Takes A Guide</h3>
-          <p>Search is a climb, not a switch. We build the route &mdash; SEO for Google, AIO and GEO for the AI engines that now answer half the questions your customers ask. Same mountain, three summits.</p>
-        </div>
-        <div class="ae-cta">
-          <span class="ae-btn">Plan The Route</span>
-          <span class="ae-ph">1-800-481-8638 &middot; eyetoad.com</span>
-        </div>
-      </div>
-    </a>
-  </div>
-</section>
+
 
 <section class="sec" id="field-guide">
   <div class="wrap">
-    <p class="slabel">The field guide &mdash; six long reads</p>
+    <p class="slabel">The field guide &mdash; six long reads, each on its own page</p>
     <h2 class="rv">Start Anywhere. They All<br>Go The Same Direction.</h2>
     <div class="read rv" style="margin-bottom:40px">
       <p class="lede">Each of these runs long on purpose. Colorado does not reward skimming &mdash; not the weather, not the altitude, not the permit systems. Pick the one that matches the trip you are actually taking.</p>
     </div>
     <div class="quads rv">
-      <a class="quad" href="#leave-no-trace">
+      <a class="quad" href="/leave-no-trace-colorado/">
         <p class="quad-n">01 &middot; Ethics</p>
         <h3>Pack It In,<br>Pack It Out</h3>
         <p>Colorado is growing fast and the backcountry is absorbing it. What Leave No Trace actually means on the ground, why an extra trash bag belongs in every kit, and how to kill a fire so it stays dead.</p>
         <span class="quad-go">Read &rarr;</span>
       </a>
-      <a class="quad" href="#colorado-150">
+      <a class="quad" href="/colorado-150th-anniversary-history/">
         <p class="quad-n">02 &middot; History</p>
         <h3>Colorado<br>At 150</h3>
         <p>Statehood in 1876, silver and gold, the railroads, the ski boom, the aerospace corridor. What a century and a half actually built &mdash; and why 2026 is the only Sesquisemiquincentennial in the country.</p>
         <span class="quad-go">Read &rarr;</span>
       </a>
-      <a class="quad" href="#mountain-day">
+      <a class="quad" href="/colorado-altitude-mountain-weather/">
         <p class="quad-n">03 &middot; Safety</p>
         <h3>Reading A<br>Mountain Day</h3>
         <p>Thin air, the two o'clock rule, monsoon season, and why the forecast on your phone stops being true above treeline. Includes a working altitude and oxygen calculator.</p>
         <span class="quad-go">Read &rarr;</span>
       </a>
-      <a class="quad" href="#water-year">
+      <a class="quad" href="/colorado-2026-water-year-drought/">
         <p class="quad-n">04 &middot; Conditions</p>
         <h3>The 2026<br>Water Year</h3>
         <p>Snowpack hit 61% of median in February &mdash; the worst on record. Here is what that does to rafting, fishing, fire bans, reservoirs and aspen color, in plain terms.</p>
         <span class="quad-go">Read &rarr;</span>
       </a>
-      <a class="quad" href="#climbing">
+      <a class="quad" href="/colorado-climbing-guide/">
         <p class="quad-n">05 &middot; Climbing</p>
         <h3>Boulders To<br>Fourteeners</h3>
         <p>The full Colorado climbing ladder: bouldering, sport, trad, alpine, and all 58 fourteeners by class. Where to start, what the grades mean, and the access rules people keep breaking.</p>
         <span class="quad-go">Read &rarr;</span>
       </a>
-      <a class="quad" href="#other-colorado">
+      <a class="quad" href="/colorado-museums-science-dark-skies/">
         <p class="quad-n">06 &middot; Culture</p>
         <h3>The Other<br>Colorado</h3>
         <p>Art, science, dinosaurs, planetariums and thirteen certified Dark Sky Parks. Everything worth doing here that does not require boots &mdash; which is more than the listicles admit.</p>
@@ -1070,711 +999,32 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
   </div>
 </section>
 
-<div class="artwrap">
-
-<article class="art" id="leave-no-trace">
+<section class="sec" id="events">
   <div class="wrap">
-    <div class="art-head rv">
-      <p class="art-kicker">01 &middot; Ethics &middot; 1,900 words</p>
-      <h2>Pack It In, Pack It Out: Keeping Colorado Colorado</h2>
-      <p class="lede">The state is growing. The mountains are not. Here is what that math actually asks of you.</p>
-      <div class="byline">
-        <span class="byline-mark" aria-hidden="true">ZW</span>
-        <span class="byline-txt"><b>Zach Wennstedt</b>Founder &amp; Editor-in-Chief &middot; Raised in Boulder, Colorado</span>
-      </div>
+    <p class="slabel">Events &amp; festivals</p>
+    <h2 class="rv">The Colorado Year,<br>Festival By Festival</h2>
+    <div class="read rv" style="margin-bottom:26px">
+      <p class="lede">Colorado What's Up is built around what is happening in the state: the recurring festivals, the seasonal windows and the dates that are worth planning a trip around. Start with the calendar, or go straight to the kind of event you care about.</p>
     </div>
-
-    <div class="art-body">
-      <div class="answer">
-        <p class="a-q">What does Leave No Trace mean in Colorado?</p>
-        <p>Leave No Trace means you leave a site with no evidence you were there. In Colorado that comes down to seven habits: plan ahead, stay on durable surfaces, pack out every piece of trash including food scraps, leave rocks and antlers where they are, kill your fire until it is cold to the touch, watch wildlife from a distance, and yield the trail. The organization that wrote those principles is headquartered in Boulder.</p>
-      </div>
-
-      <p>I grew up in Boulder. That single fact shapes everything I think about this subject, because Boulder decided what kind of town it wanted to be before most people were paying attention. In 1967 the city passed the first open space sales tax in the United States &mdash; residents voted to tax themselves to buy land and then not build on it. That program now protects tens of thousands of acres of foothills, grassland and trail. It is the reason you can still stand at the base of the Flatirons and see a mountain instead of a subdivision.</p>
-
-      <p>I have watched the pressure on that land change over my lifetime. Colorado had roughly 2.2 million people in 1970. It has close to six million now. Nearly three times the people, using the same finite number of trailheads, campsites, alpine lakes and dirt pullouts. Nobody added mountains.</p>
-
-      <p>That is not a complaint about newcomers. I would rather live in a state people want to move to. But it does mean the old casual habits do not scale anymore. When a hundred people a year visited a spot, a little sloppiness disappeared into the landscape. When ten thousand people a year visit it, the same sloppiness becomes a landfill.</p>
-
-      <h3>The Extra Bag</h3>
-
-      <p>Here is the one habit I would hand to every person who camps in this state. It costs nothing and it takes about ten minutes.</p>
-
-      <p>I bring two trash bags. One for my garbage. One for everybody else's.</p>
-
-      <p>Before I break camp, I walk the site and the fifty yards around it, and I fill the second bag. Bottle caps. Cigarette butts. Half a tent stake. Foil that somebody thought would burn. Wet wipes, which never break down and are somehow always there. Fishing line. A sock. Broken glass from a fire ring, which is the worst of it, because glass in a fire ring means the next person's dog gets cut.</p>
-
-      <p>Then it goes in the truck and out at the first dumpster I pass.</p>
-
-      <p>I want to be clear that this is not a heroic act. It is ten minutes and a two-cent bag. The reason I keep doing it is that the effect compounds in a way that is genuinely surprising. Litter attracts litter &mdash; a clean site stays clean, and a site with three beer cans in the weeds will have thirty by August. If you strip a site back to zero, you have not just cleaned it once. You have reset the baseline for everyone who camps there for the rest of the season.</p>
-
-      <blockquote>Leave it better than you found it is not a slogan. It is a maintenance schedule, and every one of us is on the crew.</blockquote>
-
-      <h3>The Seven Principles, Translated For Actual Colorado</h3>
-
-      <p>The Leave No Trace Center for Outdoor Ethics publishes seven principles. They are good. They are also written to apply to every landscape in the country, which makes them a little abstract. Here is what each one means at 9,000 feet in a dry year.</p>
-
-      <h4>1. Plan ahead and prepare</h4>
-      <p>In Colorado this mostly means: check the fire ban before you leave the house. Bans change by county and sometimes by week, and they get stricter fast in a drought year. Also check whether your spot needs a reservation. A lot of Colorado is now permitted or timed, and finding that out at the gate is a wasted day.</p>
-
-      <h4>2. Travel and camp on durable surfaces</h4>
-      <p>Use the site that already exists. Colorado's alpine tundra above treeline is the fragile part &mdash; those tiny cushion plants can be decades old and a single boot print off-trail can last years. Below treeline, camp on dirt, rock or dry grass, and stay at least 200 feet from lakes and streams. On national forest land, dispersed camping is generally capped at 14 days within a 28-day period, and you are expected to move on after that.</p>
-
-      <h4>3. Dispose of waste properly</h4>
-      <p>Pack out all trash. All of it. Orange peels and apple cores are trash &mdash; they take months to break down at altitude and they teach animals to associate humans with food. For human waste, dig a cathole six to eight inches deep, at least 200 feet from water, trail and camp, and pack out the paper. Some high-use areas and all technical routes now require a wag bag. Carry one anyway.</p>
-
-      <h4>4. Leave what you find</h4>
-      <p>Rocks, wildflowers, shed antlers, old mining artifacts &mdash; leave them. Colorado is full of historic mining structures and it is genuinely illegal to remove artifacts from many of them. The columbine is also protected: picking one on public land is against state law.</p>
-
-      <h4>5. Minimize campfire impacts</h4>
-      <p>This is the one that burns down the state. More on it below.</p>
-
-      <h4>6. Respect wildlife</h4>
-      <p>Never feed anything. A fed animal is a dead animal, and in Colorado that includes bears, which get relocated once and euthanized the second time. Store food in a hard-sided vehicle or a bear canister. During the September and October elk rut, stay well back &mdash; a bull elk in rut is a 700-pound animal with a bad attitude and antlers, and people get hurt every single year taking photos.</p>
-
-      <h4>7. Be considerate of other visitors</h4>
-      <p>Uphill hiker has the right of way. Bikes yield to hikers, everyone yields to horses. Keep the music in your headphones. People drove three hours to hear wind in the pines, not your speaker.</p>
-
-      <h3>Kill The Fire. Then Kill It Again.</h3>
-
-      <p>The overwhelming majority of Colorado wildfires are started by people. Not lightning. Us. Abandoned campfires, chain drag from a trailer, a hot exhaust in dry grass, fireworks, a cigarette out a window.</p>
-
-      <p>The campfire ones are the most preventable and the most infuriating, because the procedure is not complicated.</p>
-
-      <ul class="tick">
-        <li><strong>Let it burn down.</strong> Stop adding wood an hour before you want to sleep. You want ash, not logs.</li>
-        <li><strong>Drown it.</strong> Not a splash. Pour water until the hissing stops completely.</li>
-        <li><strong>Stir it.</strong> Get a stick or a shovel in there and turn everything over. Scrape the coals off the unburned wood. Find the embers hiding underneath.</li>
-        <li><strong>Drown it again.</strong> Every surface you just exposed needs water too.</li>
-        <li><strong>Touch it.</strong> Back of your hand, an inch above the ash. If you feel heat, it is not out. Repeat until it is cold.</li>
-      </ul>
-
-      <p>If you do not have enough water to do all of that, you do not have enough water to have a fire. That is the whole rule. Dirt alone does not work &mdash; it insulates coals and they can smolder underground for days, then surface into dry grass after you have driven home.</p>
-
-      <p>And in a year like this one, the honest answer is often to skip the fire entirely. A camp stove boils water faster, does not require a permit, and cannot start a 100,000-acre fire. I like a campfire as much as anyone. I have also spent enough Augusts watching smoke columns from my driveway to have gotten comfortable going without.</p>
-
-      <h3>What Changed, And What Did Not</h3>
-
-      <p>The thing I would tell somebody who just moved here is that Colorado is not actually fragile in the way people mean when they say it. It is a hard, high, dry place that has survived mining booms, clearcuts and a century of bad decisions. It is tougher than we are.</p>
-
-      <p>What is fragile is the <em>experience</em>. The reason you drove up here. The silence, the water you can put your hand in, the site that looks like nobody has ever been there. That is the part that degrades first, and that is the part that a single bag of somebody else's garbage can restore.</p>
-
-      <p>Colorado's population tripled in my lifetime and the mountains did not get bigger. So the only variable left is how carefully each of us moves through them. That is not a burden. It is ten minutes, one extra bag, and a fire you touched with your hand before you left.</p>
-
-      <p>Do that and this state will still be worth driving to in another 150 years.</p>
-
-      <div class="answer" style="margin-top:34px">
-        <p class="a-q">Where do I find a legal campsite in Colorado?</p>
-        <p>Start with dispersed camping on national forest land, which is free and legal on most Forest Service roads, or reserve a developed site through the managing agency. Our companion guide at <a href="https://coloradocampingspots.com/" rel="noopener">Colorado Camping Spots</a> maps out where to go by region, and the Colorado Parks &amp; Wildlife and U.S. Forest Service sites in the <a href="#resources">resources section</a> below list current closures and fire restrictions.</p>
-      </div>
-
-      <p class="note">Sources and further reading: Leave No Trace Center for Outdoor Ethics (Boulder, CO); U.S. Forest Service Rocky Mountain Region; Colorado Parks &amp; Wildlife; City of Boulder Open Space &amp; Mountain Parks; U.S. Census Bureau population estimates. Fire restriction status changes frequently &mdash; always confirm with the managing county or agency before you travel.</p>
+    <div class="rv">
+<div class="cards3">
+<a class="card" href="/colorado-events-calendar/"><p class="quad-n">Calendar</p><h3>Colorado Events, Month By Month</h3><p>Twelve months of recurring Colorado festivals, races, fairs and seasonal windows, with the typical dates and where to confirm them.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-music-festivals/"><p class="quad-n">Music</p><h3>Colorado Music Festivals</h3><p>Telluride Bluegrass, the Rocky Mountain Folks Festival, Aspen and Bravo! Vail classical seasons, Red Rocks and the mountain jazz weekends.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-food-and-drink-festivals/"><p class="quad-n">Food &amp; drink</p><h3>Food And Drink Festivals</h3><p>The Great American Beer Festival, Food &amp; Wine Classic in Aspen, Palisade peaches, Colorado Mountain Winefest and the harvest calendar.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-film-and-arts-festivals/"><p class="quad-n">Film &amp; arts</p><h3>Film And Arts Festivals</h3><p>Telluride Film Festival, Mountainfilm, Denver Film Festival, Sundance's move to Boulder, Shakespeare under the stars and the Cherry Creek Arts Festival.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-winter-festivals/"><p class="quad-n">Winter</p><h3>Winter Festivals And Holiday Lights</h3><p>Ullr Fest, the snow sculpture championships, Steamboat's Winter Carnival, Frozen Dead Guy Days, skijoring in Leadville and Denver's light shows.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-rodeos-fairs-western-events/"><p class="quad-n">Western</p><h3>Rodeos, Fairs And Western Events</h3><p>The National Western Stock Show, Greeley Stampede, Pikes Peak or Bust, the Colorado State Fair and the Meeker sheepdog trials.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-wildlife-watching-calendar/"><p class="quad-n">Wildlife</p><h3>Colorado Wildlife Watching Calendar</h3><p>Sandhill cranes in March, moose in North Park, the elk rut in September, kokanee in October and wintering bald eagles near Denver.</p><span class="quad-go">Read &rarr;</span></a>
+<a class="card" href="/colorado-guides/"><p class="quad-n">Reading list</p><h3>All Colorado Guides</h3><p>Every long read and event guide on the site in one place, from Leave No Trace and altitude to the scenic byways and traction law.</p><span class="quad-go">Read &rarr;</span></a>
+</div>
     </div>
-  </div>
-</article>
-
-<article class="art" id="colorado-150">
-  <div class="wrap">
-    <div class="art-head rv">
-      <p class="art-kicker">02 &middot; History &middot; 1,850 words</p>
-      <h2>Colorado At 150: What A Century And A Half Actually Built</h2>
-      <p class="lede">Gold, silver, railroads, skis and satellites &mdash; and one word nobody else in America gets to use this year.</p>
-      <div class="byline">
-        <span class="byline-mark" aria-hidden="true">ZW</span>
-        <span class="byline-txt"><b>Zach Wennstedt</b>Founder &amp; Editor-in-Chief &middot; Raised in Boulder, Colorado</span>
-      </div>
-    </div>
-
-    <div class="art-body">
-      <div class="answer">
-        <p class="a-q">Why is Colorado called the Centennial State?</p>
-        <p>Colorado became the 38th state on August 1, 1876 &mdash; exactly 100 years after the Declaration of Independence. President Ulysses S. Grant signed the statehood proclamation, and the timing gave Colorado its nickname. That coincidence is also why 2026 is unusual: Colorado turns 150 in the same year the country turns 250.</p>
-      </div>
-
-      <p>History Colorado has a word for it. Sesquisemiquincentennial. It is not elegant and it will not fit on a t-shirt, but it is accurate, and Colorado is the only state in the country that gets to use it. Every other state's anniversary is just an anniversary. Ours is permanently stapled to the nation's, because of a hundred-year gap that a territorial legislature was very deliberately racing to hit.</p>
-
-      <p>So what did a century and a half actually produce? Here is the honest version, including the parts the tourism copy skips.</p>
-
-      <h3>1858&ndash;1876: The Rush That Mostly Failed</h3>
-
-      <p>Colorado begins, in the American sense, with a rumor. In 1858 prospectors found small amounts of gold near the mouth of Cherry Creek, where Denver sits now. The news traveled east and got wildly exaggerated on the way. An estimated hundred thousand people set out for the Rockies under the slogan "Pikes Peak or Bust."</p>
-
-      <p>Roughly half of them turned around. The gold was real but thin, and the ones who stayed mostly did not get rich. The people who did get rich sold them shovels, flour and lumber. That pattern &mdash; the boom enriching the supplier rather than the digger &mdash; repeats through the entire state's history, right up through the ski industry and the tech corridor.</p>
-
-      <p>Colorado Territory was organized in 1861. Statehood took another fifteen years and two failed attempts, and it finally arrived on August 1, 1876. The proclamation Grant signed is now held by History Colorado and was displayed publicly in Denver on the 150th anniversary this August.</p>
-
-      <h3>1878&ndash;1893: Silver, And Then No Silver</h3>
-
-      <p>The gold rush was the prologue. Silver was the fortune.</p>
-
-      <p>Leadville sits at 10,152 feet and is the highest incorporated city in the United States. In the late 1870s it became one of the richest square miles on the continent. The silver boom built opera houses, mansions, narrow-gauge railroads and an entire political class. Horace Tabor went from running a general store to serving in the U.S. Senate.</p>
-
-      <p>It ended almost overnight. In 1893 Congress repealed the Sherman Silver Purchase Act, the price of silver collapsed, and Colorado's economy went with it. Mines closed in weeks. Towns that had ten thousand residents had a few hundred within a decade. Most of Colorado's famous ghost towns are silver towns, not gold towns, and 1893 is the year that killed them.</p>
-
-      <p>The same year, something else happened that Colorado should be far better known for. In November 1893, Colorado's male voters approved women's suffrage by popular referendum. Wyoming had granted it earlier as a territory, but Colorado was the first state where men actually voted at the ballot box to extend the franchise to women &mdash; twenty-seven years before the Nineteenth Amendment.</p>
-
-      <h3>1900&ndash;1945: Labor, Dust And A War Bargain</h3>
-
-      <p>The mining economy that built Colorado also produced some of the ugliest labor conflict in American history. In April 1914, during a coal strike in Las Animas County, a confrontation between strikers and the Colorado National Guard ended with roughly two dozen people dead, including women and children who suffocated in a cellar beneath a burning tent colony. The Ludlow Massacre changed federal labor policy and it belongs in any honest telling of this state.</p>
-
-      <p>Then the plains. Eastern Colorado is not mountains, and in the 1930s the Dust Bowl hit Baca and Prowers counties as hard as anywhere in the country. Whole counties depopulated. The eastern third of Colorado has never fully recovered its population, and it remains the part of the state that visitors and marketers both routinely forget exists.</p>
-
-      <p>The turn came from the war. In 1942 the Army built Camp Hale near Leadville to train the 10th Mountain Division in alpine and ski warfare. Thousands of soldiers learned to ski at altitude in Colorado. When they came home, a remarkable number of them went into the ski business.</p>
-
-      <h3>1946&ndash;1976: The Mountains Become A Product</h3>
-
-      <p>Aspen reopened as a ski resort in 1946, backed by Walter Paepcke, who wanted a town that combined skiing with music, philosophy and design &mdash; an idea that sounded absurd and turned out to be worth billions.</p>
-
-      <p>Vail followed in 1962, founded by Pete Seibert and Earl Eaton, both 10th Mountain veterans. Within twenty years Colorado had converted its high country from a mining economy into a recreation economy. The mines had extracted metal. The resorts extracted altitude, snow and scenery, and unlike ore, those do not run out.</p>
-
-      <p>Then Colorado did something no place has done before or since. Denver was awarded the 1976 Winter Olympics. In 1972, Colorado voters passed a ballot measure barring the state from funding them. The Games were handed to Innsbruck. Colorado remains the only place ever to be awarded a modern Olympics and then turn them down.</p>
-
-      <p>That vote is the most Colorado thing in this entire article. It was driven by a coalition worried about growth, cost and environmental damage &mdash; the same argument the state is still having, fifty years later, in every mountain town council meeting.</p>
-
-      <h3>1976&ndash;Now: Satellites, Labs And The Water Question</h3>
-
-      <p>The modern Colorado economy is less photogenic and much larger. Boulder hosts a dense cluster of federal science &mdash; NOAA, NIST and NCAR among them &mdash; and the physics work done in those labs has produced multiple Nobel Prizes. Colorado Springs and the Front Range host a national aerospace and defense corridor that quietly employs tens of thousands.</p>
-
-      <p>And underneath all of it sits water. Colorado is a headwaters state. No major river flows into Colorado; they all start here and flow out. The Colorado River rises in Rocky Mountain National Park and ends up watering Phoenix, Los Angeles and the Imperial Valley. The 1922 Colorado River Compact divided that water among seven states based on flow measurements taken during an unusually wet stretch, and every water fight in the American West since has been an argument with that document.</p>
-
-      <p>Which is why a low snow year here is national news. See the water year piece below for what 2026 in particular is doing.</p>
-
-      <h3>The Places That Got Protected</h3>
-
-      <p>Colorado's four national parks were each created for a different reason, and together they are a decent summary of the state.</p>
-
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr><th scope="col">Park</th><th scope="col">Established</th><th scope="col">Why it exists</th></tr></thead>
-          <tbody>
-            <tr><td>Mesa Verde</td><td>1906</td><td>First national park created to protect the works of people rather than landscape &mdash; the Ancestral Puebloan cliff dwellings</td></tr>
-            <tr><td>Rocky Mountain</td><td>1915</td><td>Alpine tundra, the Continental Divide and the headwaters of the Colorado River</td></tr>
-            <tr><td>Black Canyon of the Gunnison</td><td>1999</td><td>A gorge so narrow and deep that parts of it get roughly half an hour of sunlight a day</td></tr>
-            <tr><td>Great Sand Dunes</td><td>2004</td><td>The tallest dunes in North America, sitting against 13,000-foot peaks</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note">Great Sand Dunes was protected as a national monument in 1932 and redesignated a national park and preserve in 2004. Source: National Park Service.</p>
-
-      <h3>What The 150th Actually Looks Like</h3>
-
-      <p>The commemoration is running all year and it is deliberately decentralized. The signature program is Stories in the Sky, a series of roughly 150 community drone shows staged across the state from late 2025 through December 2026. History Colorado is also running a digital passport designed to route people into small towns and independent businesses rather than the same overloaded trailheads.</p>
-
-      <p>On Colorado Day this August, the Capitol hosted a reenactment of the 1876 statehood proclamation, a cake cutting, a square dance inside the building, and lowriders parked on the west lawn &mdash; which is a fairly complete portrait of the state in one photograph.</p>
-
-      <p>There was also a small, genuinely nerdy detail worth noting. The Mile High marker on the Capitol steps was updated during the ceremony, but only temporarily. The official elevation datum is being recalculated by the National Oceanic and Atmospheric Administration and will not be finalized until 2027. Denver's exact mile-high line is, at this moment, provisional.</p>
-
-      <p>One hundred and fifty years in, and we are still measuring the place.</p>
-
-      <p class="note">Sources: History Colorado; America 250&ndash;Colorado 150 Commission; Colorado General Assembly; National Park Service; Colorado State Archives; Colorado Newsline reporting on the August 1, 2026 Colorado Day observance.</p>
-    </div>
-  </div>
-</article>
-
-<article class="art" id="mountain-day">
-  <div class="wrap">
-    <div class="art-head rv">
-      <p class="art-kicker">03 &middot; Safety &middot; 1,850 words</p>
-      <h2>Reading A Colorado Mountain Day Before It Reads You</h2>
-      <p class="lede">Thin air, the two o'clock rule, and why the forecast on your phone quietly stops being true above treeline.</p>
-      <div class="byline">
-        <span class="byline-mark" aria-hidden="true">ZW</span>
-        <span class="byline-txt"><b>Zach Wennstedt</b>Founder &amp; Editor-in-Chief &middot; Raised in Boulder, Colorado</span>
-      </div>
-    </div>
-
-    <div class="art-body">
-      <div class="answer">
-        <p class="a-q">Why is it harder to breathe in Colorado?</p>
-        <p>The percentage of oxygen in the air never changes &mdash; it is about 20.9% everywhere. What changes is air pressure. At 10,000 feet the atmosphere pushes down with roughly 69% of the force it does at sea level, so each breath delivers about 69% as much oxygen. Denver, at 5,280 feet, is already down to about 82%. On a fourteener summit you are near 58%.</p>
-      </div>
-
-      <p>Colorado kills people with weather and altitude every year, and almost never dramatically. It is rarely an avalanche or a fall. It is far more often somebody who started a hike at ten in the morning, felt fine, kept going, and got caught above treeline at two in the afternoon in a lightning storm, dehydrated, with a headache they thought was from the drive.</p>
-
-      <p>All of that is predictable. Here is how to predict it.</p>
-
-      <h3>The Air</h3>
-
-      <p>Altitude is not a difficulty setting. It is a physics problem, and you can calculate exactly how much oxygen you are getting.</p>
-
-      <p>Move the slider. It runs from Denver to the top of Mount Elbert.</p>
-
-      <div class="calc" id="oxyCalc">
-        <div class="calc-hd"><span>Altitude &amp; oxygen calculator</span><span id="calcPlace">Denver</span></div>
-        <div class="calc-bd">
-          <label for="altRange">Elevation above sea level</label>
-          <input type="range" id="altRange" min="0" max="14440" step="20" value="5280"
-                 aria-describedby="calcMsg" aria-label="Elevation in feet above sea level">
-          <div class="calc-scale"><span>0 ft &middot; Sea level</span><span>14,440 ft &middot; Mt Elbert</span></div>
-          <div class="calc-out">
-            <div class="co"><p class="co-k">Elevation</p><p class="co-v" id="outAlt">5,280<i>ft</i></p></div>
-            <div class="co"><p class="co-k">Air pressure vs sea level</p><p class="co-v" id="outPct">82<i>%</i></p></div>
-            <div class="co"><p class="co-k">Effective oxygen</p><p class="co-v" id="outO2">17.2<i>%</i></p></div>
-          </div>
-          <p class="calc-msg" id="calcMsg">Denver's air delivers about four-fifths the oxygen of sea level. Most visitors feel this as mild shortness of breath on stairs for the first day or two.</p>
-        </div>
-      </div>
-      <p class="note">Calculated from the International Standard Atmosphere barometric formula. Effective oxygen assumes a constant 20.9% oxygen fraction. Real pressure varies a few percent with weather &mdash; a low-pressure storm system makes a summit feel several hundred feet higher than it is.</p>
-
-      <h3>Altitude Sickness Is Not A Fitness Test</h3>
-
-      <p>Acute mountain sickness does not care how strong you are. Marathon runners get it. Sedentary smokers sometimes do not. It is largely genetic lottery plus how fast you went up.</p>
-
-      <p>Symptoms usually start six to twelve hours after arriving high:</p>
-
-      <ul class="tick">
-        <li>Headache that does not respond to ibuprofen</li>
-        <li>Nausea or loss of appetite</li>
-        <li>Fatigue far beyond the effort</li>
-        <li>Dizziness, and sleep that keeps breaking</li>
-      </ul>
-
-      <p>The treatment for all of it is the same and it is not negotiable: <strong>go down</strong>. Descending a thousand feet fixes most cases within hours. Nothing else reliably does. Not rest, not aspirin, not pushing through.</p>
-
-      <p>The two dangerous escalations are high altitude cerebral edema and high altitude pulmonary edema. The tells are stumbling and confusion for the first, and a wet cough with breathlessness at rest for the second. Either one is a descend-immediately-and-call-911 situation. They are rare below 12,000 feet and they are not survivable by waiting.</p>
-
-      <p>Prevention that actually works:</p>
-
-      <ul class="tick">
-        <li><strong>Sleep low, climb high.</strong> Spend a night in Denver or Colorado Springs before you sleep in Leadville.</li>
-        <li><strong>Drink more than feels necessary.</strong> Dry air pulls water out through your lungs at a rate you will not notice.</li>
-        <li><strong>Skip the alcohol on night one.</strong> A beer at 9,000 feet does roughly what two do at sea level, and it wrecks the sleep you need to acclimate.</li>
-        <li><strong>Give it 24 to 48 hours.</strong> Do the easy hike first. The fourteener is day three.</li>
-      </ul>
-
-      <h3>The Two O'Clock Rule</h3>
-
-      <p>Here is the single most useful sentence in this article: <strong>be off the summit by noon and below treeline by two.</strong></p>
-
-      <p>Colorado's summer weather runs on a daily engine. Morning sun heats the ground. Warm air rises up the slopes. By late morning it hits cold air aloft, condenses, and builds vertically into a thunderhead. By early afternoon that cell is producing lightning. The whole cycle is so reliable you can set a watch by it from roughly mid-June through mid-September.</p>
-
-      <p>This is why fourteener trailheads are full of cars at four in the morning. It is not machismo. It is arithmetic. A ten-mile round trip at altitude takes eight hours, and if you want to be below treeline at two, you started at five.</p>
-
-      <p>The North American Monsoon makes it worse. From roughly mid-July into early September, moisture pushes north from the Gulf of California and Colorado's afternoon storms stop being isolated and start being daily. Monsoon storms also arrive earlier &mdash; noon instead of two &mdash; and they dump enough water fast enough to cause flash flooding in narrow canyons and on burn scars.</p>
-
-      <p>If you hear thunder, count. Sound takes about five seconds to travel a mile. Under thirty seconds between flash and boom means the storm is close enough to hit you, and you should already be moving downhill and away from ridgelines, isolated trees and standing water. Wait thirty minutes after the last thunder before going back up.</p>
-
-      <h3>Why Your Phone Forecast Is Wrong Above Treeline</h3>
-
-      <p>The National Weather Service issues forecasts on a grid roughly 2.5 kilometers across. That is excellent resolution for a city. It is a blunt instrument in terrain where a 3,000-foot cliff, a valley floor and an exposed ridge can all fall inside one grid square.</p>
-
-      <p>Your weather app gives you the number for the nearest town. The nearest town is usually in a valley, several thousand feet below where you are going.</p>
-
-      <p>Two corrections you can do in your head:</p>
-
-      <ul class="tick">
-        <li><strong>Temperature.</strong> Subtract roughly 3 to 5 &deg;F for every 1,000 feet you climb. An 80&deg; day in Estes Park is a 50&deg; day on Trail Ridge Road &mdash; before wind.</li>
-        <li><strong>Wind.</strong> Ridges and passes routinely run two to three times the valley wind speed. A 15 mph forecast can be a 40 mph reality on an exposed saddle, and 40 mph wind at 45&deg; is a hypothermia scenario in July.</li>
-      </ul>
-
-      <p>Use the point forecast at weather.gov rather than a generic app, and drop the exact coordinates of your trailhead or summit into it. It will give you the grid square you are actually standing in, plus the forecast discussion, where a human meteorologist explains what they are uncertain about. That discussion is the most underused free resource in Colorado.</p>
-
-      <h3>The Sun Is A Separate Problem</h3>
-
-      <p>Ultraviolet radiation increases roughly 4 to 5 percent per 1,000 feet of elevation. At 12,000 feet you are getting somewhere near half again the UV you would get at sea level, and snow reflects most of what misses you.</p>
-
-      <p>People come home from Colorado with burns they did not think were possible in 45-degree weather. Sunscreen, real sunglasses and a brimmed hat are alpine safety equipment here, not vanity items. Snow blindness is a real and genuinely miserable condition and it happens to spring skiers every year.</p>
-
-      <h3>Winter Has Its Own Rules</h3>
-
-      <p>Two things matter above all others.</p>
-
-      <p><strong>Chain law.</strong> CDOT activates traction and chain restrictions on I-70 and mountain passes during storms. Driving into an active restriction without proper tires can get you fined heavily, and the fine goes up sharply if you block the road. Check before you leave, not at the ramp.</p>
-
-      <p><strong>Avalanche.</strong> Any time you leave a groomed run or travel on snow above treeline, you are in avalanche terrain. The Colorado Avalanche Information Center publishes a free daily forecast by zone. Read it. Colorado's snowpack has a persistent weak layer problem that makes it one of the most dangerous in North America, and low-snow years like this one tend to make that layer worse, not better.</p>
-
-      <h3>The Whole Thing In Six Lines</h3>
-
-      <ul class="tick">
-        <li>Sleep a night low before you go high.</li>
-        <li>Start early. Summit by noon, below treeline by two.</li>
-        <li>Drink more water than you think you need.</li>
-        <li>Pull the point forecast for your actual coordinates, not the town.</li>
-        <li>Carry a layer, a headlamp and more food than the plan requires.</li>
-        <li>Pick a turnaround time before you start, and honor it even when you feel great.</li>
-      </ul>
-
-      <p>That last one is the one people break. The mountain will still be there next weekend. Set the time, and go home.</p>
-
-      <p class="note">Sources: National Weather Service (Boulder, Pueblo and Grand Junction forecast offices); Colorado Avalanche Information Center; Colorado Department of Transportation traction and chain law; National Park Service backcountry guidance. This article is general education, not medical advice &mdash; if you have heart, lung or blood-pressure conditions, talk to a physician before spending time above 8,000 feet.</p>
-    </div>
-  </div>
-</article>
-
-<article class="art" id="water-year">
-  <div class="wrap">
-    <div class="art-head rv">
-      <p class="art-kicker">04 &middot; Conditions &middot; 1,850 words</p>
-      <h2>The 2026 Water Year: Why A Dry Winter Is Still Shaping Your Trip</h2>
-      <p class="lede">Snowpack hit 61% of median in February &mdash; the worst reading in the modern record. Eight months later, that number is still deciding what you can do here.</p>
-      <div class="byline">
-        <span class="byline-mark" aria-hidden="true">ZW</span>
-        <span class="byline-txt"><b>Zach Wennstedt</b>Founder &amp; Editor-in-Chief &middot; Raised in Boulder, Colorado</span>
-      </div>
-    </div>
-
-    <div class="art-body">
-      <div class="answer">
-        <p class="a-q">Is Colorado in a drought in 2026?</p>
-        <p>Yes. Colorado came out of the 2025&ndash;26 winter with statewide snowpack near 61% of median &mdash; ranked as the worst in a snow telemetry record that goes back to about 1987. Parts of Summit, Eagle, Pitkin, Lake and Park counties reached exceptional drought, the U.S. Drought Monitor's most severe category, and most of northwest Colorado sat in extreme or severe drought.</p>
-      </div>
-
-      <p>Almost nobody plans a Colorado trip around hydrology. You should, at least a little, because in this state the snow that fell in January is the reason a river is runnable in July, a campground has a fire ban in August, and the aspens turn a week and a half early in September.</p>
-
-      <p>Here is the chain, in plain terms, and where 2026 sits on it.</p>
-
-      <h3>What A Water Year Even Is</h3>
-
-      <p>Hydrologists do not use the calendar year. They use the water year, which runs October 1 through September 30. The logic is clean: the snow that starts falling in October is the water you will be drinking, floating and fighting fires with the following summer. Grouping October through September keeps one winter's snow with the summer it feeds.</p>
-
-      <p>The measurement that matters is not snow depth. It is snow water equivalent &mdash; how much actual water is locked in that snow. Two feet of dense wet snow holds far more water than four feet of the dry powder Colorado is famous for. A network of automated SNOTEL stations across the mountain West weighs the snowpack continuously and reports it as a percentage of the long-term median for that date.</p>
-
-      <p>That percentage is the single number that tells you what kind of summer Colorado is about to have.</p>
-
-      <h3>What 2026 Read</h3>
-
-      <p>Badly.</p>
-
-      <p>By mid-February the statewide figure was 61% of median. Officials noted that it would have taken record-breaking snowfall for the rest of the season just to reach a normal peak &mdash; and that did not happen. The state's fire agency said publicly that conditions in places looked worse than the winters that preceded 2012 and 2020, two of the most destructive fire years in Colorado history.</p>
-
-      <p>The effects showed up before the snow even melted. Frisco closed its Dillon Reservoir boat ramp for the entire 2026 season, on guidance that the reservoir would not fill enough to float the docks. That decision cost the town north of $300,000 in revenue, and it happened in February, based purely on what the snowpack was not doing.</p>
-
-      <p>The lack of snow also pushed fire risk earlier into the calendar and forced agencies to delay or cancel prescribed pile burns, which need snow on the ground to be conducted safely. That backlog of unburned fuel does not disappear. It waits.</p>
-
-      <h3>Five Things It Changes For Visitors</h3>
-
-      <h4>1. Whitewater seasons compress</h4>
-      <p>Colorado's rafting season is driven by runoff. In a good year, high water on the Arkansas, Colorado and Animas holds into early July and the big-water trips run for weeks. In a year like this, peak flow arrives earlier, drops faster, and the season for the high-consequence stretches can end in June.</p>
-      <p>That does not mean no rafting. It means outfitters shift to sections that run well at lower flow, and the trip you booked as a class IV may be running closer to class III. Call the outfitter and ask what the gauge is reading rather than what the brochure says. You can check the same gauges yourself &mdash; the U.S. Geological Survey publishes real-time streamflow for hundreds of Colorado sites, free.</p>
-
-      <h4>2. Fishing gets restricted for the fish, not for you</h4>
-      <p>Low flows mean warm water, and warm water holds less dissolved oxygen. When river temperatures climb into the upper 60s and low 70s, a trout that fights a long battle and gets released often dies anyway. Colorado Parks &amp; Wildlife responds with voluntary fishing closures, usually asking anglers to stay off the water from late morning through evening.</p>
-      <p>These are voluntary. Honor them anyway. Fish early, fish the tailwaters below dams where the water comes out cold, and pack a thermometer. If it reads 70, go get breakfast.</p>
-
-      <h4>3. Fire bans become the default</h4>
-      <p>Expect restrictions, and expect them to change while you are already out there. The two tiers you will see most:</p>
-      <ul class="tick">
-        <li><strong>Stage 1</strong> generally bans open fires outside permanent developed campground rings, plus fireworks and smoking outside a vehicle or cleared area. Liquid and gas stoves usually stay legal.</li>
-        <li><strong>Stage 2</strong> is far broader &mdash; typically no fires of any kind including charcoal, restrictions on chainsaws and welding, and limits on driving off established roads.</li>
-      </ul>
-      <p>Bans are set county by county and agency by agency, so a single weekend trip can cross three different rule sets. Check each county you will be sleeping in, the day you leave.</p>
-
-      <h4>4. Burn scars turn rain into flash floods</h4>
-      <p>This is the one people underestimate. After a fire, soil can become hydrophobic &mdash; it sheds water instead of absorbing it. A short, ordinary thunderstorm over a burn scar can produce a debris flow in a drainage that has never flooded in living memory.</p>
-      <p>Colorado's 2025 season included the Lee Fire at roughly 137,758 acres, one of the largest in state history. Those scars will be generating flash flood risk for years. If a flash flood warning is issued for a burn area while you are camped in a canyon below it, leave. Do not wait to see water.</p>
-
-      <h4>5. Fall color runs early and burns out faster</h4>
-      <p>Drought-stressed aspens change sooner, hold less vivid color, and drop leaves faster than trees in a wet year. Guides that tell you to wait for the first week of October are repeating a normal-year rule.</p>
-      <p>For 2026, plan the high country &mdash; passes above 10,000 feet, the San Juans, Kebler Pass &mdash; for mid to late September. Mid-elevation spots like Kenosha and Guanella passes run late September into the first days of October. The Front Range and city parks hold latest, into mid-October. Color quality will vary sharply by microclimate: north-facing slopes and drainages with reliable water will look far better than dry exposed hillsides a mile away.</p>
-
-      <h3>Why Colorado's Snow Is Everyone's Problem</h3>
-
-      <p>Colorado is a headwaters state. Water flows out of here and essentially none flows in. The Colorado River starts in Rocky Mountain National Park and, by the time it is finished, has supplied cities and farmland across seven states and two countries.</p>
-
-      <p>The 1922 Colorado River Compact split that water using flow records from an unusually wet period, which means the river has been over-allocated on paper for most of a century. A 61% snow year in Colorado is therefore not a local inconvenience. It is a line item in reservoir operations from Lake Powell to the Imperial Valley.</p>
-
-      <blockquote>The snow that falls on a pass in January is somebody's drinking water in July, in a city a thousand miles away. That is the actual reason Coloradans watch the SNOTEL numbers like a stock ticker.</blockquote>
-
-      <h3>How To Check Conditions Yourself</h3>
-
-      <p>You do not need a subscription for any of this. Every one of these is a free public source:</p>
-
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr><th scope="col">What you want to know</th><th scope="col">Where to look</th></tr></thead>
-          <tbody>
-            <tr><td>Current snowpack, by basin</td><td>USDA Natural Resources Conservation Service SNOTEL reports</td></tr>
-            <tr><td>Drought category for a county</td><td>U.S. Drought Monitor weekly map</td></tr>
-            <tr><td>River flow in cubic feet per second</td><td>USGS real-time water data</td></tr>
-            <tr><td>Active fires and containment</td><td>InciWeb, and the state's emergency information portal</td></tr>
-            <tr><td>Fire bans and stage restrictions</td><td>The specific county sheriff and land agency</td></tr>
-            <tr><td>Red flag warnings and flash flood warnings</td><td>National Weather Service, weather.gov</td></tr>
-            <tr><td>Road closures from fire or flood</td><td>COtrip.org, or dial 511 in Colorado</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>The Honest Summary</h3>
-
-      <p>2026 is a thin year. It does not mean cancel the trip. Colorado in a dry summer is still Colorado, and some of it is genuinely better &mdash; clearer skies for stargazing, firmer trails earlier in the season, and high routes that melt out weeks ahead of schedule.</p>
-
-      <p>It means shift the plan. Go earlier for water, later for color, and build in the assumption that you will be cooking on a stove rather than sitting around a fire. Check the county the morning you leave.</p>
-
-      <p>And if there is a burn scar above your campsite, look up before you unroll the sleeping bag.</p>
-
-      <p class="note">Sources: USDA Natural Resources Conservation Service snowpack reporting; U.S. Drought Monitor; Colorado Division of Fire Prevention and Control; Denver Water; Town of Frisco; U.S. Geological Survey water data; Colorado Parks &amp; Wildlife. Snowpack figures cited are from the February 2026 reporting period. Conditions change &mdash; verify current status before you travel.</p>
-    </div>
-  </div>
-</article>
-
-<article class="art" id="climbing">
-  <div class="wrap">
-    <div class="art-head rv">
-      <p class="art-kicker">05 &middot; Climbing &middot; 1,850 words</p>
-      <h2>Boulders To Fourteeners: The Colorado Climbing Ladder</h2>
-      <p class="lede">Four disciplines, two rating systems, 58 summits and one set of access rules people keep breaking.</p>
-      <div class="byline">
-        <span class="byline-mark" aria-hidden="true">ZW</span>
-        <span class="byline-txt"><b>Zach Wennstedt</b>Founder &amp; Editor-in-Chief &middot; Raised in Boulder, Colorado</span>
-      </div>
-    </div>
-
-    <div class="art-body">
-      <div class="answer">
-        <p class="a-q">How many 14ers are in Colorado?</p>
-        <p>Fifty-eight, according to the Colorado Geological Survey. The highest is Mount Elbert at 14,440 feet, which is also the second-highest peak in the contiguous United States. The state also holds roughly 647 peaks above 13,000 feet, which is where most experienced Colorado climbers eventually end up when the fourteener trailheads get full.</p>
-      </div>
-
-      <p>Colorado has more climbing than any one person can work through in a lifetime, spread across granite, sandstone, limestone, gneiss and choss. What it does not have is an obvious on-ramp, because the sport is really four different sports wearing the same jacket.</p>
-
-      <p>Here is the ladder, bottom to top, with where to actually go.</p>
-
-      <h3>Rung One: Bouldering</h3>
-
-      <p>No rope. No partner strictly required. A crash pad, shoes, chalk, and problems that are usually under twenty feet tall.</p>
-
-      <p>Bouldering uses the V-scale, running from V0 at the easy end to V17 at the outer limit of what humans have done. V0 to V2 is where a fit beginner lives. The scale is open-ended and deliberately vague, which climbers complain about constantly and have never fixed.</p>
-
-      <p>Colorado's bouldering is world-class and unusually accessible:</p>
-
-      <ul class="tick">
-        <li><strong>The Flatirons and Boulder Canyon.</strong> The default. Minutes from town, thousands of problems, and the historical center of American bouldering.</li>
-        <li><strong>Mount Blue Sky area.</strong> High-altitude granite that stays cool when the Front Range is baking. Renamed from Mount Evans in 2023.</li>
-        <li><strong>Chaos Canyon, Rocky Mountain National Park.</strong> Alpine bouldering at 11,000 feet with a real approach. Short season, spectacular setting.</li>
-        <li><strong>Poudre Canyon.</strong> Northern Colorado's quieter option, and less crowded on a Saturday than anything near Boulder.</li>
-      </ul>
-
-      <p>Start indoors. Denver and the Front Range have a dense concentration of climbing gyms, and three months of gym bouldering will teach you movement that outdoor granite will otherwise beat out of you slowly and painfully.</p>
-
-      <h3>Rung Two: Sport Climbing</h3>
-
-      <p>Rope, harness, belayer, and bolts already drilled into the rock. You clip as you go. It is the safest way to climb hard.</p>
-
-      <p>Sport and trad both use the Yosemite Decimal System, where technical rock climbing is class 5 and the decimal that follows is the difficulty: 5.0 through 5.15d. Anything from 5.5 to 5.8 is beginner terrain. Most recreational climbers plateau somewhere in the 5.10 to 5.11 range and are perfectly happy there.</p>
-
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr><th scope="col">Area</th><th scope="col">Rock</th><th scope="col">Best season</th><th scope="col">Known for</th></tr></thead>
-          <tbody>
-            <tr><td>Rifle Mountain Park</td><td>Limestone</td><td>Spring, fall</td><td>Steep, technical, internationally famous. Not a beginner venue.</td></tr>
-            <tr><td>Shelf Road</td><td>Limestone</td><td>Winter, spring</td><td>Pocketed vertical face climbing near Ca&ntilde;on City. Climbable in January.</td></tr>
-            <tr><td>Clear Creek Canyon</td><td>Gneiss</td><td>Spring, fall</td><td>Closest real sport climbing to Denver. Roadside access.</td></tr>
-            <tr><td>Boulder Canyon</td><td>Granite</td><td>Spring&ndash;fall</td><td>Huge range, mixed sport and trad, minutes from Boulder.</td></tr>
-            <tr><td>Independence Pass</td><td>Granite</td><td>Summer</td><td>High alpine cragging above 10,000 ft. Closed by snow much of the year.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>Rung Three: Trad</h3>
-
-      <p>Traditional climbing means you place your own protection into cracks as you climb and remove it on the way out. Nothing is pre-installed. It requires judgment that cannot be rushed, and it is where Colorado's reputation was made.</p>
-
-      <ul class="tick">
-        <li><strong>Eldorado Canyon.</strong> Sandstone south of Boulder, and one of the most historically significant crags in the country. Notoriously sandbagged &mdash; a 5.9 in Eldo will humble somebody who climbs 5.10 in a gym.</li>
-        <li><strong>Lumpy Ridge.</strong> Granite domes above Estes Park. Long, moderate, classic multi-pitch lines.</li>
-        <li><strong>The Diamond on Longs Peak.</strong> A vertical big wall whose base sits above 13,000 feet. Serious alpine commitment, short season, genuine consequence.</li>
-        <li><strong>Black Canyon of the Gunnison.</strong> Remote, loose in places, hard to retreat from, and generally regarded as one of the most serious trad venues in the lower 48. This is a destination for people who already know what they are doing.</li>
-      </ul>
-
-      <h3>Rung Four: The Fourteeners</h3>
-
-      <p>This is the one everybody has heard of, and it is not technically climbing at all until it is.</p>
-
-      <p>Peaks are graded on the Yosemite class system, which measures the terrain rather than the difficulty of moves:</p>
-
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr><th scope="col">Class</th><th scope="col">What it means</th><th scope="col">Colorado examples</th></tr></thead>
-          <tbody>
-            <tr><td>1</td><td>Walking on a maintained trail</td><td>Mount Elbert, Quandary Peak, Handies Peak</td></tr>
-            <tr><td>2</td><td>Off-trail hiking, talus, occasional hands</td><td>Mount Bierstadt, Grays and Torreys</td></tr>
-            <tr><td>3</td><td>Real scrambling. Hands required, exposure, route-finding</td><td>Longs Peak via the Keyhole, Crestone Peak</td></tr>
-            <tr><td>4</td><td>Steep scrambling where a fall is likely fatal. Many parties rope up</td><td>Capitol Peak, Pyramid Peak, the Maroon Bells</td></tr>
-            <tr><td>5</td><td>Technical roped climbing</td><td>Standard routes on a handful of summits and most direct lines</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>The gap between class 2 and class 3 is enormous and it is where most people get into trouble. Class 2 is a hard hike. Class 3 is a place where a slip has consequences and where cloud cover can erase the route entirely.</p>
-
-      <p>Two peaks deserve a specific warning. The Maroon Bells are known as the Deadly Bells for a reason &mdash; the rock is rotten mudstone that pulls out in your hand, and the standard routes are far more dangerous than their grade suggests. Capitol Peak's Knife Edge is exactly what it sounds like. Neither is a reasonable early fourteener.</p>
-
-      <p>Start with Elbert, Quandary, Bierstadt or Grays. Read a current trip report from the last two weeks before you go, not a guidebook from 2015 &mdash; routes change, and so do trailhead parking rules.</p>
-
-      <h3>The Access Rules People Keep Breaking</h3>
-
-      <p>Colorado climbing access is not guaranteed. It is negotiated, constantly, and it gets revoked.</p>
-
-      <ul class="tick">
-        <li><strong>Raptor closures.</strong> From roughly February through July, sections of Eldorado Canyon, Boulder's open space cliffs and many other crags close for nesting peregrine falcons and golden eagles. These are legally enforced and dates shift year to year. Check before you drive.</li>
-        <li><strong>Private land.</strong> Several fourteener approaches cross private property under voluntary agreements. Those agreements have been suspended before after trespassing and litter. If a sign says stay on the easement, stay on the easement.</li>
-        <li><strong>Human waste.</strong> Alpine soil does not process anything. Above treeline, pack it out. Wag bags are stocked at many trailheads for free.</li>
-        <li><strong>Parking.</strong> Popular trailheads now run shuttles, reservations or timed permits. Showing up at 6 a.m. and hoping is no longer a strategy at Quandary, Maroon Bells or much of Rocky Mountain National Park.</li>
-      </ul>
-
-      <p>The Access Fund, which is headquartered in Boulder, exists specifically to keep these places open. It is worth the membership if you climb here more than a few times a year.</p>
-
-      <h3>The Part Nobody Trains</h3>
-
-      <p>Climbers train fingers and forearms. What limits most people on a Colorado alpine day is none of that.</p>
-
-      <p>It is cardiovascular capacity at 13,000 feet, hip and ankle stability on loose talus, and the ability to keep making good decisions when you are ten hours in and cooked. A ten-mile day with 4,500 feet of gain at altitude is an endurance event, and the fifteen-minute gym session that builds a stronger crimp does nothing for it.</p>
-
-      <p>The best off-season preparation I have seen for Colorado alpine days is not more climbing. It is combat sports conditioning &mdash; sustained interval work, real grip endurance, balance under fatigue, and the specific mental training of staying composed while your heart rate is pinned. Rounds on a bag translate to switchbacks better than almost anything else does.</p>
-
-      <div style="margin:36px 0">
-        <p class="ad-lab">Sponsored</p>
-        <a class="ad-oct" href="https://mmatrainingdenver.com/" rel="noopener">
-          <div class="oct">
-            <div class="oct-in">
-              <p class="oct-k">Denver, Colorado</p>
-              <h3>Train Like The<br>Mountain Is Watching</h3>
-              <p>Striking, grappling and conditioning for every level &mdash; from first class to fight camp. Build the engine that gets you up the peak and back down still thinking clearly.</p>
-              <span class="oct-btn">MMA Training Denver</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <h3>If You Are Starting This Month</h3>
-
-      <ul class="tick">
-        <li>Three months in a gym before you touch outdoor rock. Learn to fall and learn to move.</li>
-        <li>Take a real class for anything involving a rope. Belaying is a skill you are trusted with, not a video you watch.</li>
-        <li>First fourteener: a class 1 or 2 peak, on a weekday, starting before sunrise.</li>
-        <li>Read the current conditions report, not the guidebook.</li>
-        <li>Build the aerobic base first. It is the actual limiter.</li>
-      </ul>
-
-      <p>The fifty-eight are not going anywhere. The 647 thirteeners behind them are quieter, wilder and mostly empty, and that is where the people who have been doing this a long time tend to end up.</p>
-
-      <p class="note">Sources: Colorado Geological Survey peak counts; National Park Service; U.S. Forest Service Rocky Mountain Region; Colorado Parks &amp; Wildlife raptor closure notices; Access Fund. Route conditions change constantly &mdash; consult current trip reports and confirm closures before every trip.</p>
-    </div>
-  </div>
-</article>
-
-<article class="art" id="other-colorado">
-  <div class="wrap">
-    <div class="art-head rv">
-      <p class="art-kicker">06 &middot; Culture &middot; 1,850 words</p>
-      <h2>The Other Colorado: Art, Science, Fossils And Dark Skies</h2>
-      <p class="lede">Everything worth doing in this state that does not require boots &mdash; which turns out to be most of it.</p>
-      <div class="byline">
-        <span class="byline-mark" aria-hidden="true">ZW</span>
-        <span class="byline-txt"><b>Zach Wennstedt</b>Founder &amp; Editor-in-Chief &middot; Raised in Boulder, Colorado</span>
-      </div>
-    </div>
-
-    <div class="art-body">
-      <div class="answer">
-        <p class="a-q">What is there to do in Colorado besides hiking?</p>
-        <p>A great deal. Colorado has an immersive art complex in Denver, a museum holding roughly 95% of one major American painter's life output, dinosaur tracks you can touch twenty minutes from downtown, an atmospheric research lab designed by I.M. Pei that is free and open to the public, and more certified Dark Sky places than anywhere else in the world.</p>
-      </div>
-
-      <p>Colorado's tourism image is a person in a puffy jacket on a summit. Fine. But the state also runs a serious cultural and scientific economy, and a rainy afternoon here is not a wasted day &mdash; it is an opportunity to see the parts of Colorado that the outdoor listicles have never once mentioned.</p>
-
-      <h3>Denver, Which Is Not Just A Place You Fly Into</h3>
-
-      <p><strong>Meow Wolf Convergence Station</strong> is four floors of immersive art built by a collective of hundreds of artists, wrapped around a science fiction narrative you can either follow closely or completely ignore. It is genuinely unlike anything else, it is not a passive experience, and it takes most people three hours minimum. Buy tickets ahead.</p>
-
-      <p><strong>The Clyfford Still Museum</strong> is the most unusual museum in the American West, and almost nobody outside the art world knows why. Still was one of the founding figures of Abstract Expressionism. He withdrew from the commercial art world and stipulated that his estate go, in its entirety, to any American city willing to build a permanent home for it. Denver did. The result is a single museum holding roughly ninety-five percent of one major artist's total life output &mdash; something that exists nowhere else for any painter of his stature.</p>
-
-      <p><strong>The Denver Art Museum</strong> occupies two buildings that argue with each other. The 1971 Martin Building was designed by Italian architect Gio Ponti and is one of the first high-rise art museums ever built. The 2006 Hamilton Building is a Daniel Libeskind design of angular titanium planes that appears to be falling over. Inside, the Indigenous Arts of North America collection is among the most significant anywhere.</p>
-
-      <p><strong>The Denver Museum of Nature &amp; Science</strong> sits in City Park with a view of the entire Front Range from its west windows. Serious paleontology and anthropology collections, plus the Gates Planetarium. Bring kids or do not &mdash; it works either way.</p>
-
-      <h3>Boulder's Federal Science, Which Is Open To You</h3>
-
-      <p>Boulder holds one of the densest concentrations of federal atmospheric and physical science in the country, and a surprising amount of it is publicly accessible.</p>
-
-      <p>The <strong>NCAR Mesa Laboratory</strong> sits on a mesa above town in a building designed by I.M. Pei, who studied the cliff dwellings at Mesa Verde before drawing it. The concrete was mixed with local sandstone aggregate so the building would weather into the color of the Flatirons behind it. There is a free public exhibit floor on atmospheric science and climate, free parking, and trails leaving from the lot. It is one of the best free hours in Colorado.</p>
-
-      <p><strong>Fiske Planetarium</strong> at the University of Colorado is among the largest planetariums in the United States and runs public shows and live star talks through the school year.</p>
-
-      <p>The physics done in Boulder's federal labs has produced multiple Nobel Prizes. If you have ever wondered why so many extremely specific atomic clocks live in one small Colorado town, that is the reason.</p>
-
-      <h3>The Dinosaurs Are Closer Than You Think</h3>
-
-      <p>Twenty minutes west of Denver, in Morrison, there is a road cut called <strong>Dinosaur Ridge</strong> where you can stand in front of the fossils rather than behind glass.</p>
-
-      <p>One side of the ridge exposes the Morrison Formation &mdash; Jurassic rock, roughly 150 million years old, containing bones of the animals everybody learned as a child. The formation is literally named after the town. On the other side, in younger Cretaceous rock, there are hundreds of dinosaur footprints preserved on a tilted slab, made when this was a coastal mudflat. You can walk the road for free or take a guided bus.</p>
-
-      <p>Further west, <strong>Dinosaur National Monument</strong> straddles the Colorado&ndash;Utah line and contains a quarry building constructed directly around a rock face holding roughly 1,500 fossil bones, left in place where they were found. You can put your hand on a 150-million-year-old femur.</p>
-
-      <h3>Landscapes That Are Really Geology Lessons</h3>
-
-      <p><strong>Red Rocks Amphitheatre</strong> is a concert venue built between two 300-foot sandstone monoliths, and the acoustics are a geological accident rather than an engineering achievement. Free to walk during the day when nothing is scheduled, and the trail system around it is open year-round.</p>
-
-      <p><strong>Garden of the Gods</strong> in Colorado Springs is free, always has been, and always will be &mdash; the land was donated to the city in 1909 on the explicit condition that it remain free to the public forever. Vertical red sandstone fins pushed upright by the same uplift that raised Pikes Peak.</p>
-
-      <p><strong>Pikes Peak</strong> itself is reachable by cog railway, highway or a very long hike. In 1893 a schoolteacher named Katharine Lee Bates reached the summit, looked out, and wrote the words that became "America the Beautiful." The purple mountain majesties were these.</p>
-
-      <p><strong>Great Sand Dunes National Park</strong> holds the tallest dunes in North America &mdash; roughly 750 feet &mdash; piled against the Sangre de Cristo range. Medano Creek runs seasonally at the base in a strange pulsing surge, though in a low-snow year like 2026 it may be thin or gone by early summer.</p>
-
-      <p><strong>Mesa Verde</strong> protects roughly 5,000 archaeological sites, including some 600 cliff dwellings built by Ancestral Puebloan people. Cliff Palace requires a ranger-led ticketed tour and it is worth arranging in advance.</p>
-
-      <h3>The Dark Sky Advantage</h3>
-
-      <p>This is the category where Colorado genuinely leads the world, and almost nobody markets it.</p>
-
-      <p>Colorado is home to 13 International Dark Sky Parks and eight International Dark Sky Communities. More than 30 places statewide, including a dozen state parks, have formally begun the certification process &mdash; more than anywhere else on Earth. In late 2025 Breckenridge became the first mountain ski resort community in Colorado to earn Dark Sky Community status. Chimney Rock National Monument received a Dark Sky Park designation in December 2025, and Old Snowmass became the newest Dark Sky Community in February 2026.</p>
-
-      <p>New for 2026, the Colorado Tourism Office is launching a <strong>Colorado Stargazing Trail</strong> with itineraries and planning resources built specifically around night skies.</p>
-
-      <p>Practical advice for actually seeing anything:</p>
-
-      <ul class="tick">
-        <li><strong>Go near a new moon.</strong> A full moon washes out the Milky Way completely. This matters more than location.</li>
-        <li><strong>Give your eyes 20 to 30 minutes.</strong> Dark adaptation is a real physiological process. One glance at a phone screen resets it.</li>
-        <li><strong>Use red light only.</strong> Red preserves night vision. Most headlamps have a red mode nobody uses.</li>
-        <li><strong>Dress far warmer than the daytime suggests.</strong> Standing still at 9,000 feet at midnight in September is a genuinely cold activity.</li>
-        <li><strong>Check for smoke.</strong> In an active fire year, haze can ruin a clear forecast. The dry air that makes Colorado great for astronomy is the same dry air that makes it burn.</li>
-      </ul>
-
-      <h3>The Genuinely Odd Ones</h3>
-
-      <p><strong>Bishop Castle</strong>, near Rye in the Wet Mountains, is a full stone castle with towers, a dragon and iron catwalks, built almost entirely by one man &mdash; Jim Bishop &mdash; who started in 1969 and largely never stopped. There is no admission fee and there are no safety railings in the modern sense. It is a monument to stubbornness and it has to be seen.</p>
-
-      <p><strong>The National Mining Hall of Fame and Museum</strong> in Leadville sits in the highest incorporated city in the country and tells the silver story properly, including the parts that ended badly.</p>
-
-      <p><strong>The Royal Gorge Bridge</strong> near Ca&ntilde;on City hangs 956 feet above the Arkansas River and was for decades the highest suspension bridge in the world.</p>
-
-      <p>And Denver's <strong>RiNo district</strong> is essentially an outdoor mural gallery that repaints itself every year. Free, walkable, and different every time you go.</p>
-
-      <h3>A Rainy Day Plan That Is Better Than The Sunny One</h3>
-
-      <p>Here is the itinerary I give people when the forecast falls apart: Clyfford Still in the morning, walk across the plaza to the Denver Art Museum after lunch, drive twenty minutes to Dinosaur Ridge in the late afternoon when the light on the tracks is best, and finish at Red Rocks whether or not there is a show.</p>
-
-      <p>That is a full day, it is mostly indoors, it costs less than a lift ticket, and it covers Abstract Expressionism, Gio Ponti, the Jurassic and 300-foot sandstone monoliths.</p>
-
-      <p>Colorado is not only a place to be outside. It is a place that has been carefully collecting things for a hundred and fifty years, and a lot of them are indoors waiting for a bad weather day.</p>
-
-      <p class="note">Sources: Colorado Tourism Office 2026 releases; DarkSky International certification listings; National Park Service; National Center for Atmospheric Research; Denver Art Museum; Clyfford Still Museum. Hours, ticketing and tour availability change seasonally &mdash; confirm directly before you go.</p>
-    </div>
-  </div>
-</article>
-</div><!-- /artwrap -->
-
-<section class="sec tone tight">
-  <div class="wrap">
-    <p class="ad-lab" style="text-align:center">Sponsored</p>
-    <a class="ad-plate" href="https://www.eyetoad.com/" rel="noopener">
-      <div class="plate">
-        <div class="plate-top"><span>Colorado</span><span>26</span></div>
-        <p class="plate-num">EYETOAD</p>
-        <svg class="plate-mtn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M0 34 L46 14 L74 24 L116 4 L158 22 L196 10 L238 26 L282 8 L326 22 L364 12 L400 30 L400 34 Z" fill="#2F5233" opacity=".28"/>
-        </svg>
-        <div class="plate-bot"><span>Denver</span><span>Since 2012</span></div>
-      </div>
-      <div class="plate-cap">
-        <b>Eye To Ad Media</b>
-        Search engine optimization, AI optimization and generative engine optimization for Colorado businesses.<br>
-        1-800-481-8638 &middot; eyetoad.com
-      </div>
-    </a>
   </div>
 </section>
+
+
+<!-- /artwrap -->
+
+
 
 <section class="sec dark" id="resources">
   <div class="wrap">
@@ -1896,7 +1146,7 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
       </details>
       <details>
         <summary>Do I need a reservation for Rocky Mountain National Park?</summary>
-        <div class="faq-a"><p>Yes, during the timed entry season. For 2026 the system runs from May 22 into mid-October, with two permit types: Timed Entry+ Bear Lake Road (5 a.m. to 6 p.m., ending October 18) and standard Timed Entry for the rest of the park (9 a.m. to 2 p.m.). Reservations are booked on Recreation.gov for a $2 processing fee. Additional slots are released at 7 p.m. Mountain Time the night before each arrival date.</p></div>
+        <div class="faq-a"><p>Yes, during the timed entry season. For 2026 the system runs from May 22 into mid-October, with two permit types: Timed Entry+ Bear Lake Road (5 a.m. to 6 p.m., ending October 19) and standard Timed Entry for the rest of the park (9 a.m. to 2 p.m.). Reservations are booked on Recreation.gov for a $2 processing fee. Additional slots are released at 7 p.m. Mountain Time the night before each arrival date.</p></div>
       </details>
       <details>
         <summary>Can I have a campfire in Colorado right now?</summary>
@@ -1927,66 +1177,13 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
 </section>
 <script async src="https://distributepressreleases.com/assets/network.js"></script>
 
-<section class="sec dark" id="contact">
+<section class="sec dark tight" id="contact">
   <div class="wrap">
-    <p class="slabel">Get in touch</p>
-    <h2 class="rv" style="text-align:center">Advertise With Us,<br>Or Send Us A Story Tip</h2>
-    <div class="read rv" style="text-align:center;margin-bottom:34px">
-      <p class="lede">Two things land in this inbox. Businesses that want to reach people planning Colorado trips, and Coloradans who know about something we should be covering. Both are welcome.</p>
-    </div>
-
-    <div class="formbox rv">
-      <form id="cwuForm" method="POST" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
-        <input type="hidden" name="_subject" value="New lead — coloradowhatsup.com">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_source" value="coloradowhatsup.com/">
-        <input type="hidden" name="_ts" id="_ts" value="">
-
-        <div class="hp" aria-hidden="true">
-          <label for="_honey">Leave this field empty</label>
-          <input type="text" name="_honey" id="_honey" tabindex="-1" autocomplete="off">
-        </div>
-
-        <div class="frow">
-          <div class="fld">
-            <label for="f_name">Your name</label>
-            <input type="text" id="f_name" name="Name" required autocomplete="name" placeholder="First and last">
-          </div>
-          <div class="fld">
-            <label for="f_email">Email</label>
-            <input type="email" id="f_email" name="Email" required autocomplete="email" placeholder="you@example.com">
-          </div>
-        </div>
-
-        <div class="frow">
-          <div class="fld">
-            <label for="f_phone">Phone <span style="opacity:.6">(optional)</span></label>
-            <input type="tel" id="f_phone" name="Phone" autocomplete="tel" placeholder="(720) 000-0000">
-          </div>
-          <div class="fld">
-            <label for="f_type">What is this about?</label>
-            <select id="f_type" name="Inquiry Type" required>
-              <option value="">Choose one&hellip;</option>
-              <option value="Advertising Inquiry">Advertising inquiry</option>
-              <option value="News Story Tip">News or story tip</option>
-              <option value="Event Submission">Event submission</option>
-              <option value="Correction">Correction to an article</option>
-              <option value="Other">Something else</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="fld">
-          <label for="f_msg">Details</label>
-          <textarea id="f_msg" name="Message" required placeholder="If this is an advertising inquiry, tell us about your business and where in Colorado you serve. If it is a story tip, tell us what happened and where."></textarea>
-        </div>
-
-        <button type="submit" class="fsub" id="fBtn">Send It</button>
-        <p class="fmsg" id="fMsg" role="status" aria-live="polite"></p>
-        <p class="fnote">We read everything. Advertising inquiries usually get a reply within one business day. Story tips are reviewed before anything is published, and we will not print your name without asking first. This form is protected against automated submissions.</p>
-      </form>
-      <iframe name="cwuSink" id="cwuSink" title="Form submission target" style="display:none;width:0;height:0;border:0" tabindex="-1" aria-hidden="true"></iframe>
+    <div class="read cta-band">
+      <p class="slabel">Get in touch</p>
+      <h2>Spotted A Change Or<br>A Colorado Event We Missed?</h2>
+      <p class="lede">Dates, closures and openings move every season. Corrections and event tips go through our contact page, and we update the page when we can confirm the change with the organizer or agency.</p>
+      <a class="gbtn solid" href="/contact/">Contact Colorado What's Up</a>
     </div>
   </div>
 </section>
@@ -1995,55 +1192,68 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
 
 <footer class="ftr">
   <div class="wrap">
-    <div class="ftr-grid">
+    <div class="ftr-grid ftr-grid5">
       <div>
-        <img class="ftr-logo" src="/images/colorado-whats-up-logo.png" width="300" height="102" alt="Colorado What's Up" loading="lazy">
-        <p class="ftr-p">Long-form guides to Colorado &mdash; how to camp here without wrecking it, how to read a mountain day, and what a hundred and fifty years actually built. Written in Colorado, sourced from public agencies.</p>
+        <img class="ftr-logo" src="/images/web/colorado-whats-up-logo.png" width="328" height="180" alt="Colorado What's Up" loading="lazy">
+        <p class="ftr-p">An independent guide to what is happening in Colorado &mdash; festivals, seasonal events, wildlife calendars and the long reads that explain how the state works. Written in Colorado and sourced from the organizers and agencies that set the dates.</p>
+        <p class="ftr-p">Companion guides: <a href="https://coloradowhattodo.com/">Colorado What To Do</a> (activities, regions and itineraries) and <a href="https://coloradocampingspots.com/">Colorado Camping Spots</a>.</p>
       </div>
       <div>
-        <h5>The Guides</h5>
+        <h5>Events &amp; Festivals</h5>
         <ul>
-          <li><a href="#leave-no-trace">Pack It In, Pack It Out</a></li>
-          <li><a href="#colorado-150">Colorado At 150</a></li>
-          <li><a href="#mountain-day">Reading A Mountain Day</a></li>
-          <li><a href="#water-year">The 2026 Water Year</a></li>
-          <li><a href="#climbing">Boulders To Fourteeners</a></li>
-          <li><a href="#other-colorado">The Other Colorado</a></li>
+          <li><a href="/colorado-events-calendar/">Colorado events calendar</a></li>
+          <li><a href="/colorado-music-festivals/">Music festivals</a></li>
+          <li><a href="/colorado-food-and-drink-festivals/">Food &amp; drink festivals</a></li>
+          <li><a href="/colorado-film-and-arts-festivals/">Film &amp; arts festivals</a></li>
+          <li><a href="/colorado-winter-festivals/">Winter festivals &amp; holiday lights</a></li>
+          <li><a href="/colorado-rodeos-fairs-western-events/">Rodeos, fairs &amp; western events</a></li>
+          <li><a href="/colorado-wildlife-watching-calendar/">Wildlife watching calendar</a></li>
         </ul>
       </div>
       <div>
-        <h5>Explore</h5>
+        <h5>Colorado Guides</h5>
         <ul>
-          <li><a href="/things-to-do-in-colorado/">Things To Do In Colorado</a></li>
-          <li><a href="/colorado-scenic-byways/">Colorado Scenic Byways</a></li>
-          <li><a href="/best-time-to-visit-colorado/">Best Time To Visit Colorado</a></li>
+          <li><a href="/leave-no-trace-colorado/">Pack It In, Pack It Out</a></li>
+          <li><a href="/colorado-150th-anniversary-history/">Colorado At 150</a></li>
+          <li><a href="/colorado-altitude-mountain-weather/">Reading A Mountain Day</a></li>
+          <li><a href="/colorado-2026-water-year-drought/">The 2026 Water Year</a></li>
+          <li><a href="/colorado-climbing-guide/">Boulders To Fourteeners</a></li>
+          <li><a href="/colorado-museums-science-dark-skies/">The Other Colorado</a></li>
+          <li><a href="/colorado-guides/">All Colorado guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Plan A Trip</h5>
+        <ul>
+          <li><a href="/things-to-do-in-colorado/">Things to do in Colorado</a></li>
+          <li><a href="/colorado-scenic-byways/">Colorado scenic byways</a></li>
+          <li><a href="/best-time-to-visit-colorado/">Best time to visit Colorado</a></li>
+          <li><a href="/colorado-traction-law/">Colorado traction law</a></li>
           <li><a href="/about-colorado/">About Colorado</a></li>
-          <li><a href="#resources">Colorado Resources</a></li>
-          <li><a href="/sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
       <div>
-        <h5>Network</h5>
+        <h5>About This Site</h5>
         <ul>
-          <li><a href="https://coloradocampingspots.com/" rel="noopener">Colorado Camping Spots</a></li>
-          <li><a href="https://actionglobalnews.com/" rel="noopener">Local &amp; global news</a></li>
-          <li><a href="https://linkrestaurants.com/" rel="noopener">Link Restaurants</a></li>
-          <li><a href="https://www.eyetoad.com/" rel="noopener">Eye To Ad Media</a></li>
-          <li><a href="https://denverseo.io/" rel="noopener">Denver SEO</a></li>
-          <li><a href="#contact">Advertise with us</a></li>
+          <li><a href="/about/">About this site</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/editorial-standards/">How we research</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms &amp; disclaimer</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
     </div>
 
     <div class="srcbox">
-      <b>Where our numbers come from</b>
-      National Weather Service &middot; U.S. Geological Survey &middot; USDA Natural Resources Conservation Service (SNOTEL) &middot; Colorado Department of Transportation &middot; National Park Service &middot; Colorado Parks &amp; Wildlife &middot; Colorado Geological Survey &middot; History Colorado &middot; U.S. Drought Monitor &middot; DarkSky International.
-      Live conditions in the header strip are pulled directly from the National Weather Service public API and are not modified. Conditions, closures and fire restrictions change constantly &mdash; always confirm with the managing agency before you travel.
+      <b>Where our dates and numbers come from</b>
+      Event organizers&rsquo; official sites &middot; Colorado Tourism Office &middot; History Colorado &middot; National Park Service &middot; Colorado Parks &amp; Wildlife &middot; U.S. Fish &amp; Wildlife Service &middot; National Weather Service &middot; Colorado Department of Transportation &middot; U.S. Geological Survey &middot; Colorado Geological Survey.
+      Event dates, venues and ticketing change from year to year. Always confirm with the organizer before you travel.
     </div>
 
     <div class="ftr-bot">
-      <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. All rights reserved.</span>
-      <span>Edited by Zach Wennstedt &middot; Denver, Colorado &middot; <a href="#contact">Send us a message</a></span>
+      <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. Edited by Zach Wennstedt, Denver, Colorado.</span>
+      <span><a href="/contact/">Contact</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; Site by <a href="https://eyetoad.com/" rel="nofollow">Eye To Ad Media</a></span>
     </div>
   </div>
 </footer>
@@ -2369,7 +1579,7 @@ figcaption{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin-to
         show(true, "Sent. We'll get back to you shortly.");
         form.reset();
       })
-      .catch(function(){ show(false, 'That did not go through. Please call 1-800-481-8638.'); })
+      .catch(function(){ show(false, 'That did not go through. Please use the contact page.'); })
       .then(function(){ if(btn){ btn.disabled = false; btn.textContent = label; } });
   });
 })();

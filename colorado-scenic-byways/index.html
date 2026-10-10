@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-3561679124556057">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561679124556057" crossorigin="anonymous"></script>
 <title>Colorado Scenic Byways: All 26 Routes, Sortable (2026 Guide)</title>
-<meta name="description" content="All 26 Colorado Scenic and Historic Byways in one sortable table — region, surface, seasonal closures, high points and what each drive is actually for. Includes both All-American Roads and the 2026 Mount Blue Sky reopening.">
+<meta name="description" content="All 26 Colorado Scenic and Historic Byways in one sortable table: region, surface, seasonal closures, high points and what each drive is for.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Zach Wennstedt">
 <link rel="canonical" href="https://coloradowhatsup.com/colorado-scenic-byways/">
@@ -14,13 +16,15 @@
 <meta property="og:title" content="Colorado Scenic Byways: All 26 Routes, Sortable">
 <meta property="og:description" content="Every one of Colorado's 26 designated byways in a single sortable table — surface, season, high point and what each drive is for.">
 <meta property="og:url" content="https://coloradowhatsup.com/colorado-scenic-byways/">
-<meta property="og:image" content="https://coloradowhatsup.com/images/fall-river-reservoir-colorado-lakes.jpg">
+<meta property="og:image" content="https://coloradowhatsup.com/images/og-coloradowhatsup.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Colorado mountain road and reservoir">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Colorado Scenic Byways: All 26 Routes, Sortable">
 <meta name="twitter:description" content="Every one of Colorado's 26 designated byways in a single sortable table.">
-<meta name="twitter:image" content="https://coloradowhatsup.com/images/fall-river-reservoir-colorado-lakes.jpg">
+<meta name="twitter:image" content="https://coloradowhatsup.com/images/og-coloradowhatsup.png">
 
 <meta name="geo.region" content="US-CO">
 <meta name="geo.placename" content="Colorado">
@@ -32,7 +36,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="/images/fall-river-reservoir-colorado-lakes.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/web/fall-river-reservoir-colorado-lakes-1600.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -503,6 +507,82 @@ table.byways tr[hidden]{display:none}
   .mmpost{width:70px}
   table.byways{font-size:14px}
 }
+
+/* ===== 2026-10 upgrade: white header bar, layout fixes ===== */
+.hdr,.hdr.solid{position:sticky;top:0;left:auto;right:auto;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(20,32,43,.07);backdrop-filter:none;-webkit-backdrop-filter:none}
+.hdr-in{padding:8px 22px;gap:18px}
+.brand img{width:auto;height:76px;object-fit:contain;object-position:center}
+.nav{gap:2px}
+.nav a{color:var(--ink);border:1px solid transparent;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;font-size:17px;padding:10px 10px}
+.nav a:hover,.nav a:focus-visible{background:var(--paper-2);border-color:var(--line);color:#A3192A}
+.nav a[aria-current="page"]{color:#A3192A;box-shadow:inset 0 -3px 0 var(--gold)}
+.burger{background:#fff;border:1px solid var(--line);backdrop-filter:none;color:var(--ink)}
+.burger span{background:var(--ink)}
+.hero{min-height:calc(100svh - 93px);flex-direction:column;align-items:stretch;justify-content:flex-end}
+.hero-in{padding:72px 0 48px}
+.phero-in{padding:84px 0 52px}
+.mhero-in{padding:96px 0 90px}
+.ftr-grid5{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}
+.ftr-p a{color:var(--gold)}
+.cta-band{text-align:center}
+.cta-band .gbtn{margin-top:8px}
+@media(max-width:1180px){
+  .nav{display:none}
+  .burger{display:block}
+  .nav.open{display:flex;position:fixed;left:0;right:0;top:var(--hdr-h,93px);bottom:0;flex-direction:column;align-items:stretch;gap:0;
+    background:#fff;padding:10px 18px 28px;overflow:auto;z-index:90;max-height:none;border-top:1px solid var(--line);backdrop-filter:none}
+  .nav.open a{color:var(--ink);font-size:22px;padding:15px 6px;border:0;border-bottom:1px solid var(--line);background:none;backdrop-filter:none}
+  .ftr-grid5{grid-template-columns:1fr 1fr 1fr}
+  .ftr-grid5>div:first-child{grid-column:1/-1}
+}
+@media(max-width:768px){
+  .brand img{height:60px;width:auto}
+  .ftr-logo{height:110px;width:auto}
+  .hero{min-height:auto}
+  .hero-in{padding:56px 0 34px}
+  .phero-in{padding:60px 0 36px}
+  .mhero-in{padding:70px 0 64px}
+  .ftr-grid5{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .ftr-grid5{grid-template-columns:1fr 1fr;gap:26px 18px}
+  .hero-foot{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ===== components for event + policy pages ===== */
+.evlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin:8px 0 34px}
+.ev{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 22px 18px;background:var(--paper)}
+.sec.tone .ev{background:var(--paper-2)}
+.ev-when{font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#A3192A;margin:0 0 8px}
+.ev h3{margin:0 0 6px;font-size:1.42rem;line-height:1.05}
+.ev-where{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin:0 0 10px}
+.ev p{font-size:1rem;line-height:1.6;margin:0 0 8px}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin:10px 0 30px}
+.card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 22px 24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:background .2s}
+a.card:hover{background:var(--paper-2)}
+.card .quad-n{margin:0 0 10px}
+.card h3{font-size:1.36rem;margin:0 0 10px;line-height:1.05}
+.card p{font-size:.98rem;line-height:1.58;color:var(--ink-2);margin:0 0 14px;flex:1}
+.srcs{font-size:.96rem;line-height:1.55;padding-left:22px}
+.srcs li{margin:0 0 9px}
+.srcs .sn{color:var(--ink-3);font-family:var(--mono);font-size:12px;display:block}
+.read h2{margin-top:10px}
+.pol h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin:42px 0 14px}
+.pol h2:first-child{margin-top:0}
+.byline-s{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.78);margin:18px 0 0;line-height:1.6;letter-spacing:.04em}
+.formbox.light{background:var(--ink)}
+.formbox a{color:var(--gold)}
+@media(max-width:900px){.cards3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.evlist,.cards3{grid-template-columns:1fr}.ev{padding:20px 18px 16px}}
+@media(max-width:600px){
+  .tbl-wrap.stack{border:0;overflow:visible}
+  .stack table,.stack tbody,.stack tr,.stack td{display:block;width:100%}
+  .stack thead{position:absolute;left:-9999px}
+  .stack tr{border:1px solid var(--line);margin:0 0 12px;padding:6px 0}
+  .stack td{border:0;padding:6px 14px}
+  .stack td::before{content:attr(data-label);display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:2px}
+  .stack td:first-child{font-weight:700}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -574,7 +654,7 @@ table.byways tr[hidden]{display:none}
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://coloradowhatsup.com/images/fall-river-reservoir-colorado-lakes.jpg"
+        "url": "https://coloradowhatsup.com/images/web/fall-river-reservoir-colorado-lakes-1600.jpg"
       },
       "datePublished": "2026-08-10",
       "dateModified": "2026-08-10",
@@ -1113,27 +1193,27 @@ table.byways tr[hidden]{display:none}
 
 <header class="hdr solid" id="hdr">
   <div class="hdr-in">
-    <a class="brand" href="https://coloradowhatsup.com/" aria-label="Colorado What's Up home">
-      <img src="/images/colorado-whats-up-logo.png" width="300" height="102" alt="Colorado What's Up" fetchpriority="high">
+    <a class="brand" href="/" aria-label="Colorado What's Up home">
+      <img src="/images/web/colorado-whats-up-logo.png" width="328" height="180" alt="Colorado What's Up" fetchpriority="high">
     </a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" id="nav" aria-label="Main">
-      <a href="/">Home</a>
-      <a href="/things-to-do-in-colorado/">Things To Do</a>
-      <a href="/colorado-scenic-byways/" aria-current="page">Byways</a>
+      <a href="/colorado-events-calendar/">Events Calendar</a>
+      <a href="/colorado-music-festivals/">Music</a>
+      <a href="/colorado-food-and-drink-festivals/">Food &amp; Drink</a>
+      <a href="/colorado-film-and-arts-festivals/">Film &amp; Arts</a>
+      <a href="/colorado-winter-festivals/">Winter</a>
+      <a href="/colorado-guides/">Guides</a>
       <a href="/best-time-to-visit-colorado/">When To Go</a>
-      <a href="/about-colorado/">About Colorado</a>
-      <a href="/#resources">Resources</a>
-      <a class="nav-cta" href="#contact">Advertise / Tips</a>
     </nav>
   </div>
 </header>
 
 <section class="phero" id="top">
   <div class="phero-img" aria-hidden="true">
-    <img src="/images/fall-river-reservoir-colorado-lakes.jpg" alt="" fetchpriority="high" width="1600" height="900">
+    <img src="/images/web/fall-river-reservoir-colorado-lakes-1600.jpg" alt="" fetchpriority="high" width="1600" height="900">
   </div>
   <div class="phero-scrim" aria-hidden="true"></div>
   <div class="phero-c" aria-hidden="true">
@@ -1490,26 +1570,7 @@ table.byways tr[hidden]{display:none}
   </div>
 </section>
 
-<section class="sec tone tight">
-  <div class="wrap">
-    <p class="ad-lab" style="text-align:center">Sponsored</p>
-    <a class="ad-plate" href="https://www.eyetoad.com/" rel="noopener">
-      <div class="plate">
-        <div class="plate-top"><span>Colorado</span><span>26</span></div>
-        <p class="plate-num">EYETOAD</p>
-        <svg class="plate-mtn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M0 34 L46 14 L74 24 L116 4 L158 22 L196 10 L238 26 L282 8 L326 22 L364 12 L400 30 L400 34 Z" fill="#2F5233" opacity=".28"/>
-        </svg>
-        <div class="plate-bot"><span>Denver</span><span>Since 2012</span></div>
-      </div>
-      <div class="plate-cap">
-        <b>Eye To Ad Media</b>
-        Search engine optimization, AI optimization and generative engine optimization for Colorado businesses.<br>
-        1-800-481-8638 &middot; eyetoad.com
-      </div>
-    </a>
-  </div>
-</section>
+
 
 <section class="sec" id="fall-color">
   <div class="wrap">
@@ -1552,29 +1613,7 @@ table.byways tr[hidden]{display:none}
   </div>
 </section>
 
-<section class="sec tight">
-  <div class="wrap">
-    <p class="ad-lab">Sponsored</p>
-    <a class="ad-mm" href="https://www.eyetoad.com/" rel="noopener">
-      <div class="mmpost" aria-hidden="true">
-        <svg viewBox="0 0 96 190" role="presentation">
-          <rect x="34" y="96" width="28" height="94" fill="#4A5560"/>
-          <rect x="4" y="4" width="88" height="104" fill="#1E5B34" stroke="#ffffff" stroke-width="4"/>
-          <text x="48" y="42" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="15" fill="#ffffff" letter-spacing="1">SEO</text>
-          <text x="48" y="66" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="15" fill="#ffffff" letter-spacing="1">AIO</text>
-          <text x="48" y="90" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="15" fill="#ffffff" letter-spacing="1">GEO</text>
-        </svg>
-      </div>
-      <div>
-        <p class="mm-k">Eye To Ad Media &middot; Denver &middot; Since 2012</p>
-        <h3>Every Good Route<br>Is Marked</h3>
-        <p>Customers looking for your business are following a route too &mdash; through Google, and now through the AI engines answering before Google gets a chance. We put the markers up.</p>
-        <span class="mm-btn">Get The Map</span>
-        <span class="mm-ph">1-800-481-8638 &middot; eyetoad.com</span>
-      </div>
-    </a>
-  </div>
-</section>
+
 
 <section class="sec tone" id="planning">
   <div class="wrap">
@@ -1596,7 +1635,7 @@ table.byways tr[hidden]{display:none}
       <p>Download offline maps before you leave pavement. Large portions of the West Elk Loop, Flat Tops Trail and Alpine Loop have no coverage at all, and that is not going to change soon.</p>
 
       <h4>5. Watch the sky, not the clock</h4>
-      <p>From mid-July into early September, afternoon thunderstorms build almost daily. On a high byway that means hail, lightning and standing water on a road with no shoulder. Our guide to <a href="/#mountain-day">reading a Colorado mountain day</a> covers the two o'clock rule and why it applies to drivers too.</p>
+      <p>From mid-July into early September, afternoon thunderstorms build almost daily. On a high byway that means hail, lightning and standing water on a road with no shoulder. Our guide to <a href="/colorado-altitude-mountain-weather/">reading a Colorado mountain day</a> covers the two o'clock rule and why it applies to drivers too.</p>
 
       <h4>6. Stop in the towns</h4>
       <p>The byway program exists partly to route economic activity into small communities. Silverton, Lake City, Westcliffe, Paonia, La Junta and Julesburg are all more interesting than the four minutes most people give them. Buy lunch somewhere with one location.</p>
@@ -1615,7 +1654,7 @@ table.byways tr[hidden]{display:none}
           <li><a href="/things-to-do-in-colorado/">Things To Do In Colorado</a><span>33 places, filterable by region and season</span></li>
           <li><a href="/colorado-traction-law/">Colorado Traction Law</a><span>Tire and chain rules for winter mountain driving</span></li>
           <li><a href="/best-time-to-visit-colorado/">Best Time To Visit Colorado</a><span>Month by month, plus fall color timing</span></li>
-          <li><a href="/#water-year">The 2026 Water Year</a><span>Why color is running early this year</span></li>
+          <li><a href="/colorado-2026-water-year-drought/">The 2026 Water Year</a><span>Why color is running early this year</span></li>
         </ul>
       </div>
       <div class="res">
@@ -1687,66 +1726,13 @@ table.byways tr[hidden]{display:none}
   </div>
 </section>
 
-<section class="sec dark" id="contact">
+<section class="sec dark tight" id="contact">
   <div class="wrap">
-    <p class="slabel">Get in touch</p>
-    <h2 class="rv" style="text-align:center">Advertise With Us,<br>Or Send Us A Correction</h2>
-    <div class="read rv" style="text-align:center;margin-bottom:34px">
-      <p class="lede">Byway conditions change every season. If a gate date, a surface or a restriction on this page is wrong, tell us and we will fix it.</p>
-    </div>
-
-    <div class="formbox rv">
-      <form id="cwuForm" method="POST" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
-        <input type="hidden" name="_subject" value="New lead — coloradowhatsup.com">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_source" value="coloradowhatsup.com/colorado-scenic-byways/">
-        <input type="hidden" name="_ts" id="_ts" value="">
-
-        <div class="hp" aria-hidden="true">
-          <label for="_honey">Leave this field empty</label>
-          <input type="text" name="_honey" id="_honey" tabindex="-1" autocomplete="off">
-        </div>
-
-        <div class="frow">
-          <div class="fld">
-            <label for="f_name">Your name</label>
-            <input type="text" id="f_name" name="Name" required autocomplete="name" placeholder="First and last">
-          </div>
-          <div class="fld">
-            <label for="f_email">Email</label>
-            <input type="email" id="f_email" name="Email" required autocomplete="email" placeholder="you@example.com">
-          </div>
-        </div>
-
-        <div class="frow">
-          <div class="fld">
-            <label for="f_phone">Phone <span style="opacity:.6">(optional)</span></label>
-            <input type="tel" id="f_phone" name="Phone" autocomplete="tel" placeholder="(720) 000-0000">
-          </div>
-          <div class="fld">
-            <label for="f_type">What is this about?</label>
-            <select id="f_type" name="Inquiry Type" required>
-              <option value="">Choose one&hellip;</option>
-              <option value="Advertising Inquiry">Advertising inquiry</option>
-              <option value="Byway Correction">Byway correction or update</option>
-              <option value="News Story Tip">News or story tip</option>
-              <option value="Event Submission">Event submission</option>
-              <option value="Other">Something else</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="fld">
-          <label for="f_msg">Details</label>
-          <textarea id="f_msg" name="Message" required placeholder="If this is a correction, tell us which byway and what changed — a gate date, a surface, a restriction. If it is an advertising inquiry, tell us about your business and where in Colorado you serve."></textarea>
-        </div>
-
-        <button type="submit" class="fsub" id="fBtn">Send It</button>
-        <p class="fmsg" id="fMsg" role="status" aria-live="polite"></p>
-        <p class="fnote">We read everything. Corrections get priority and we credit local sources when we update a listing. Advertising inquiries usually get a reply within one business day. This form is protected against automated submissions.</p>
-      </form>
-      <iframe name="cwuSink" id="cwuSink" title="Form submission target" style="display:none;width:0;height:0;border:0" tabindex="-1" aria-hidden="true"></iframe>
+    <div class="read cta-band">
+      <p class="slabel">Get in touch</p>
+      <h2>Spotted A Change Or<br>A Colorado Event We Missed?</h2>
+      <p class="lede">Dates, closures and openings move every season. Corrections and event tips go through our contact page, and we update the page when we can confirm the change with the organizer or agency.</p>
+      <a class="gbtn solid" href="/contact/">Contact Colorado What's Up</a>
     </div>
   </div>
 </section>
@@ -1755,55 +1741,68 @@ table.byways tr[hidden]{display:none}
 
 <footer class="ftr">
   <div class="wrap">
-    <div class="ftr-grid">
+    <div class="ftr-grid ftr-grid5">
       <div>
-        <img class="ftr-logo" src="/images/colorado-whats-up-logo.png" width="300" height="102" alt="Colorado What's Up" loading="lazy">
-        <p class="ftr-p">Long-form guides to Colorado &mdash; how to camp here without wrecking it, how to read a mountain day, and what a hundred and fifty years actually built. Written in Colorado, sourced from public agencies.</p>
+        <img class="ftr-logo" src="/images/web/colorado-whats-up-logo.png" width="328" height="180" alt="Colorado What's Up" loading="lazy">
+        <p class="ftr-p">An independent guide to what is happening in Colorado &mdash; festivals, seasonal events, wildlife calendars and the long reads that explain how the state works. Written in Colorado and sourced from the organizers and agencies that set the dates.</p>
+        <p class="ftr-p">Companion guides: <a href="https://coloradowhattodo.com/">Colorado What To Do</a> (activities, regions and itineraries) and <a href="https://coloradocampingspots.com/">Colorado Camping Spots</a>.</p>
       </div>
       <div>
-        <h5>On This Page</h5>
+        <h5>Events &amp; Festivals</h5>
         <ul>
-          <li><a href="#table">All 26, sortable</a></li>
-          <li><a href="#all-american">The two All-American Roads</a></li>
-          <li><a href="#fall-color">Best byways for fall color</a></li>
-          <li><a href="#four-wheel">Which need four-wheel drive</a></li>
-          <li><a href="#planning">Driving them well</a></li>
-          <li><a href="#faq">Byway FAQ</a></li>
+          <li><a href="/colorado-events-calendar/">Colorado events calendar</a></li>
+          <li><a href="/colorado-music-festivals/">Music festivals</a></li>
+          <li><a href="/colorado-food-and-drink-festivals/">Food &amp; drink festivals</a></li>
+          <li><a href="/colorado-film-and-arts-festivals/">Film &amp; arts festivals</a></li>
+          <li><a href="/colorado-winter-festivals/">Winter festivals &amp; holiday lights</a></li>
+          <li><a href="/colorado-rodeos-fairs-western-events/">Rodeos, fairs &amp; western events</a></li>
+          <li><a href="/colorado-wildlife-watching-calendar/">Wildlife watching calendar</a></li>
         </ul>
       </div>
       <div>
-        <h5>Explore</h5>
+        <h5>Colorado Guides</h5>
         <ul>
-          <li><a href="/">All About Colorado</a></li>
-          <li><a href="/things-to-do-in-colorado/">Things To Do In Colorado</a></li>
-          <li><a href="/best-time-to-visit-colorado/">Best Time To Visit Colorado</a></li>
+          <li><a href="/leave-no-trace-colorado/">Pack It In, Pack It Out</a></li>
+          <li><a href="/colorado-150th-anniversary-history/">Colorado At 150</a></li>
+          <li><a href="/colorado-altitude-mountain-weather/">Reading A Mountain Day</a></li>
+          <li><a href="/colorado-2026-water-year-drought/">The 2026 Water Year</a></li>
+          <li><a href="/colorado-climbing-guide/">Boulders To Fourteeners</a></li>
+          <li><a href="/colorado-museums-science-dark-skies/">The Other Colorado</a></li>
+          <li><a href="/colorado-guides/">All Colorado guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Plan A Trip</h5>
+        <ul>
+          <li><a href="/things-to-do-in-colorado/">Things to do in Colorado</a></li>
+          <li><a href="/colorado-scenic-byways/">Colorado scenic byways</a></li>
+          <li><a href="/best-time-to-visit-colorado/">Best time to visit Colorado</a></li>
+          <li><a href="/colorado-traction-law/">Colorado traction law</a></li>
           <li><a href="/about-colorado/">About Colorado</a></li>
-          <li><a href="/#resources">Colorado Resources</a></li>
-          <li><a href="/sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
       <div>
-        <h5>Network</h5>
+        <h5>About This Site</h5>
         <ul>
-          <li><a href="https://coloradocampingspots.com/" rel="noopener">Colorado Camping Spots</a></li>
-          <li><a href="https://actionglobalnews.com/" rel="noopener">Local &amp; global news</a></li>
-          <li><a href="https://linkrestaurants.com/" rel="noopener">Link Restaurants</a></li>
-          <li><a href="https://mysaleshelp.com/" rel="noopener">Sales training</a></li>
-          <li><a href="https://www.eyetoad.com/" rel="noopener">Eye To Ad Media</a></li>
-          <li><a href="#contact">Advertise with us</a></li>
+          <li><a href="/about/">About this site</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/editorial-standards/">How we research</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms &amp; disclaimer</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
     </div>
 
     <div class="srcbox">
-      <b>Where our numbers come from</b>
-      Colorado Department of Transportation &middot; Colorado Scenic and Historic Byways Commission &middot; Colorado Tourism Office &middot; Federal Highway Administration &middot; U.S. Forest Service &middot; Bureau of Land Management &middot; National Park Service &middot; Denver Mountain Parks.
-      Byway designations, surfaces and seasonal closures were verified in August 2026. Gate dates move every year with snow, and construction closures can appear mid-season &mdash; always check COtrip.org or dial 511 before you drive a high route.
+      <b>Where our dates and numbers come from</b>
+      Event organizers&rsquo; official sites &middot; Colorado Tourism Office &middot; History Colorado &middot; National Park Service &middot; Colorado Parks &amp; Wildlife &middot; U.S. Fish &amp; Wildlife Service &middot; National Weather Service &middot; Colorado Department of Transportation &middot; U.S. Geological Survey &middot; Colorado Geological Survey.
+      Event dates, venues and ticketing change from year to year. Always confirm with the organizer before you travel.
     </div>
 
     <div class="ftr-bot">
-      <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. All rights reserved.</span>
-      <span>Edited by Zach Wennstedt &middot; Denver, Colorado &middot; <a href="#contact">Send us a message</a></span>
+      <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. Edited by Zach Wennstedt, Denver, Colorado.</span>
+      <span><a href="/contact/">Contact</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; Site by <a href="https://eyetoad.com/" rel="nofollow">Eye To Ad Media</a></span>
     </div>
   </div>
 </footer>
@@ -2035,7 +2034,7 @@ table.byways tr[hidden]{display:none}
         show(true, "Sent. We'll get back to you shortly.");
         form.reset();
       })
-      .catch(function(){ show(false, 'That did not go through. Please call 1-800-481-8638.'); })
+      .catch(function(){ show(false, 'That did not go through. Please use the contact page.'); })
       .then(function(){ if(btn){ btn.disabled = false; btn.textContent = label; } });
   });
 })();

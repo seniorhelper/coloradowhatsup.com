@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Colorado: Facts, All 64 Counties, State Symbols &amp; Geography</title>
-<meta name="description" content="Everything about Colorado — why the state has 697 sides instead of four, all 64 counties and their seats, every official state symbol and who chose it, how the geography actually works, and how to pronounce the place names.">
+<meta name="google-adsense-account" content="ca-pub-3561679124556057">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561679124556057" crossorigin="anonymous"></script>
+<title>About Colorado: Facts, 64 Counties, Symbols &amp; Geography</title>
+<meta name="description" content="Everything about Colorado: why the state has 697 sides, all 64 counties and their seats, every state symbol, how the geography works and how to say the names.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Zach Wennstedt">
 <link rel="canonical" href="https://coloradowhatsup.com/about-colorado/">
@@ -14,13 +16,15 @@
 <meta property="og:title" content="About Colorado: Facts, All 64 Counties, State Symbols &amp; Geography">
 <meta property="og:description" content="Why Colorado has 697 sides, all 64 counties and seats, every state symbol and who chose it, and how to pronounce the place names.">
 <meta property="og:url" content="https://coloradowhatsup.com/about-colorado/">
-<meta property="og:image" content="https://coloradowhatsup.com/images/colorado.jpg">
+<meta property="og:image" content="https://coloradowhatsup.com/images/og-coloradowhatsup.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Colorado mountain landscape">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="About Colorado: Facts, All 64 Counties, State Symbols &amp; Geography">
 <meta name="twitter:description" content="Why Colorado has 697 sides, all 64 counties, every state symbol, and how to pronounce the place names.">
-<meta name="twitter:image" content="https://coloradowhatsup.com/images/colorado.jpg">
+<meta name="twitter:image" content="https://coloradowhatsup.com/images/og-coloradowhatsup.png">
 
 <meta name="geo.region" content="US-CO">
 <meta name="geo.placename" content="Colorado">
@@ -566,6 +570,82 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
   .snow{display:none}
   .mstars i{animation:none;opacity:.45}
   .board-hd span.dot{animation:none}
+}
+
+/* ===== 2026-10 upgrade: white header bar, layout fixes ===== */
+.hdr,.hdr.solid{position:sticky;top:0;left:auto;right:auto;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(20,32,43,.07);backdrop-filter:none;-webkit-backdrop-filter:none}
+.hdr-in{padding:8px 22px;gap:18px}
+.brand img{width:auto;height:76px;object-fit:contain;object-position:center}
+.nav{gap:2px}
+.nav a{color:var(--ink);border:1px solid transparent;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;font-size:17px;padding:10px 10px}
+.nav a:hover,.nav a:focus-visible{background:var(--paper-2);border-color:var(--line);color:#A3192A}
+.nav a[aria-current="page"]{color:#A3192A;box-shadow:inset 0 -3px 0 var(--gold)}
+.burger{background:#fff;border:1px solid var(--line);backdrop-filter:none;color:var(--ink)}
+.burger span{background:var(--ink)}
+.hero{min-height:calc(100svh - 93px);flex-direction:column;align-items:stretch;justify-content:flex-end}
+.hero-in{padding:72px 0 48px}
+.phero-in{padding:84px 0 52px}
+.mhero-in{padding:96px 0 90px}
+.ftr-grid5{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr}
+.ftr-p a{color:var(--gold)}
+.cta-band{text-align:center}
+.cta-band .gbtn{margin-top:8px}
+@media(max-width:1180px){
+  .nav{display:none}
+  .burger{display:block}
+  .nav.open{display:flex;position:fixed;left:0;right:0;top:var(--hdr-h,93px);bottom:0;flex-direction:column;align-items:stretch;gap:0;
+    background:#fff;padding:10px 18px 28px;overflow:auto;z-index:90;max-height:none;border-top:1px solid var(--line);backdrop-filter:none}
+  .nav.open a{color:var(--ink);font-size:22px;padding:15px 6px;border:0;border-bottom:1px solid var(--line);background:none;backdrop-filter:none}
+  .ftr-grid5{grid-template-columns:1fr 1fr 1fr}
+  .ftr-grid5>div:first-child{grid-column:1/-1}
+}
+@media(max-width:768px){
+  .brand img{height:60px;width:auto}
+  .ftr-logo{height:110px;width:auto}
+  .hero{min-height:auto}
+  .hero-in{padding:56px 0 34px}
+  .phero-in{padding:60px 0 36px}
+  .mhero-in{padding:70px 0 64px}
+  .ftr-grid5{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .ftr-grid5{grid-template-columns:1fr 1fr;gap:26px 18px}
+  .hero-foot{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ===== components for event + policy pages ===== */
+.evlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin:8px 0 34px}
+.ev{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 22px 18px;background:var(--paper)}
+.sec.tone .ev{background:var(--paper-2)}
+.ev-when{font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:#A3192A;margin:0 0 8px}
+.ev h3{margin:0 0 6px;font-size:1.42rem;line-height:1.05}
+.ev-where{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin:0 0 10px}
+.ev p{font-size:1rem;line-height:1.6;margin:0 0 8px}
+.cards3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);margin:10px 0 30px}
+.card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 22px 24px;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:background .2s}
+a.card:hover{background:var(--paper-2)}
+.card .quad-n{margin:0 0 10px}
+.card h3{font-size:1.36rem;margin:0 0 10px;line-height:1.05}
+.card p{font-size:.98rem;line-height:1.58;color:var(--ink-2);margin:0 0 14px;flex:1}
+.srcs{font-size:.96rem;line-height:1.55;padding-left:22px}
+.srcs li{margin:0 0 9px}
+.srcs .sn{color:var(--ink-3);font-family:var(--mono);font-size:12px;display:block}
+.read h2{margin-top:10px}
+.pol h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin:42px 0 14px}
+.pol h2:first-child{margin-top:0}
+.byline-s{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.78);margin:18px 0 0;line-height:1.6;letter-spacing:.04em}
+.formbox.light{background:var(--ink)}
+.formbox a{color:var(--gold)}
+@media(max-width:900px){.cards3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.evlist,.cards3{grid-template-columns:1fr}.ev{padding:20px 18px 16px}}
+@media(max-width:600px){
+  .tbl-wrap.stack{border:0;overflow:visible}
+  .stack table,.stack tbody,.stack tr,.stack td{display:block;width:100%}
+  .stack thead{position:absolute;left:-9999px}
+  .stack tr{border:1px solid var(--line);margin:0 0 12px;padding:6px 0}
+  .stack td{border:0;padding:6px 14px}
+  .stack td::before{content:attr(data-label);display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:2px}
+  .stack td:first-child{font-weight:700}
 }
 </style>
 <script type="application/ld+json">
@@ -1848,20 +1928,20 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
 
 <header class="hdr solid" id="hdr">
   <div class="hdr-in">
-    <a class="brand" href="https://coloradowhatsup.com/" aria-label="Colorado What's Up home">
-      <img src="/images/colorado-whats-up-logo.png" width="300" height="102" alt="Colorado What's Up" fetchpriority="high">
+    <a class="brand" href="/" aria-label="Colorado What's Up home">
+      <img src="/images/web/colorado-whats-up-logo.png" width="328" height="180" alt="Colorado What's Up" fetchpriority="high">
     </a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
     <nav class="nav" id="nav" aria-label="Main">
-      <a href="/">Home</a>
-      <a href="/things-to-do-in-colorado/">Things To Do</a>
-      <a href="/colorado-scenic-byways/">Byways</a>
+      <a href="/colorado-events-calendar/">Events Calendar</a>
+      <a href="/colorado-music-festivals/">Music</a>
+      <a href="/colorado-food-and-drink-festivals/">Food &amp; Drink</a>
+      <a href="/colorado-film-and-arts-festivals/">Film &amp; Arts</a>
+      <a href="/colorado-winter-festivals/">Winter</a>
+      <a href="/colorado-guides/">Guides</a>
       <a href="/best-time-to-visit-colorado/">When To Go</a>
-      <a href="/about-colorado/" aria-current="page">About Colorado</a>
-      <a href="#conditions">Conditions</a>
-      <a class="nav-cta" href="#contact">Advertise / Tips</a>
     </nav>
   </div>
 </header>
@@ -2811,7 +2891,7 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
 
       <p>This governs more than hiking. It changes how long food takes to cook, how engines perform, how quickly you dehydrate, how alcohol hits, how much sunscreen you need &mdash; ultraviolet radiation increases roughly four to five percent per thousand feet &mdash; and how well you sleep the first night.</p>
 
-      <p>We built a working calculator for this on the <a href="/#mountain-day">reading a mountain day</a> guide, along with the two o'clock thunderstorm rule that comes with living under this much sky.</p>
+      <p>We built a working calculator for this on the <a href="/colorado-altitude-mountain-weather/">reading a mountain day</a> guide, along with the two o'clock thunderstorm rule that comes with living under this much sky.</p>
 
       <h3>Why the state is shaped like an argument</h3>
 
@@ -2828,37 +2908,7 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
   </div>
 </article>
 
-<section class="sec tone tight">
-  <div class="wrap">
-    <p class="ad-lab" style="text-align:center">Sponsored</p>
-    <a class="ad-gn" href="https://gnomadpromotions.com/" rel="noopener">
-      <div class="patch">
-        <div class="patch-in">
-          <div class="gnmark" aria-hidden="true">
-            <svg viewBox="0 0 120 120" role="presentation">
-              <circle cx="60" cy="60" r="56" fill="none" stroke="#2E8B8B" stroke-width="3"/>
-              <circle cx="60" cy="60" r="48" fill="none" stroke="#D9534F" stroke-width="1.5" stroke-dasharray="4 4"/>
-              <path d="M26 84 L46 50 L58 66 L74 40 L94 84 Z" fill="#2E8B8B"/>
-              <path d="M74 40 L66 53 L72 56 L78 50 L86 58 Z" fill="#F4F6F5"/>
-              <path d="M46 50 L40 60 L45 62 L50 57 L55 63 Z" fill="#F4F6F5"/>
-              <path d="M60 22 L74 44 L46 44 Z" fill="#D9534F"/>
-              <circle cx="60" cy="47" r="3.5" fill="#F4F6F5"/>
-              <line x1="26" y1="88" x2="94" y2="88" stroke="#2E8B8B" stroke-width="3"/>
-            </svg>
-          </div>
-          <div>
-            <p class="gn-k">Gnomad Promotions &middot; Branded merchandise</p>
-            <h3>If You Know,<br>You <em>Gnome</em>.</h3>
-            <p>Colorado businesses put their name on things that get used at 12,000 feet &mdash; jackets, bottles, packs, patches. Gnomad builds branded gear that survives the trailhead, not just the trade show table.</p>
-            <span class="gn-btn">Shop Promotional Products</span>
-            <span class="gn-sub">Marketing &middot; Branded Merchandise &middot; Adventure</span>
-          </div>
-        </div>
-      </div>
-    </a>
-    <p class="note" style="text-align:center;margin-top:16px">Looking for <a href="https://gnomadpromotions.com/" rel="noopener">promotional products</a> for a Colorado business, event or team? Gnomad Promotions handles design, sourcing and fulfilment.</p>
-  </div>
-</section>
+
 
 <article class="art" id="say-it" style="border-top:1px solid var(--line)">
   <div class="wrap">
@@ -2956,39 +3006,7 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
   </div>
 </article>
 
-<section class="sec tight">
-  <div class="wrap">
-    <p class="ad-lab">Sponsored</p>
-    <a class="ad-elev" href="https://www.eyetoad.com/" rel="noopener">
-      <svg viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true">
-        <defs>
-          <linearGradient id="aeFill3" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#E8A33D" stop-opacity=".26"/>
-            <stop offset="100%" stop-color="#E8A33D" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <path d="M0 250 L0 214 L70 206 L150 218 L230 190 L310 198 L400 160 L470 172 L560 138 L640 150 L730 104 L810 118 L900 62 L980 74 L1060 28 L1130 40 L1200 8 L1200 260 L0 260 Z" fill="url(#aeFill3)"/>
-        <path d="M0 214 L70 206 L150 218 L230 190 L310 198 L400 160 L470 172 L560 138 L640 150 L730 104 L810 118 L900 62 L980 74 L1060 28 L1130 40 L1200 8"
-              fill="none" stroke="#E8A33D" stroke-width="2.5"/>
-        <g stroke="#ffffff" stroke-opacity=".16" stroke-width="1">
-          <line x1="0" y1="70" x2="1200" y2="70"/><line x1="0" y1="130" x2="1200" y2="130"/><line x1="0" y1="190" x2="1200" y2="190"/>
-        </g>
-        <circle cx="1200" cy="8" r="7" fill="#C22032"/>
-      </svg>
-      <div class="ad-elev-in">
-        <div>
-          <p class="ae-k">Eye To Ad Media &middot; Denver &middot; Since 2012</p>
-          <h3>Nothing Without<br>Providence. Or A Plan.</h3>
-          <p>Colorado's motto has covered the providence half since 1877. We handle the plan &mdash; SEO, AI optimization and generative engine optimization for businesses that need to be found in both places customers now look.</p>
-        </div>
-        <div class="ae-cta">
-          <span class="ae-btn">Start The Climb</span>
-          <span class="ae-ph">1-800-481-8638 &middot; eyetoad.com</span>
-        </div>
-      </div>
-    </a>
-  </div>
-</section>
+
 
 <section class="sec dark" id="conditions">
   <div class="wrap">
@@ -3034,7 +3052,7 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
     <p class="slabel">The short version</p>
     <h2 class="rv">Colorado In Fourteen Moments</h2>
     <div class="read rv">
-      <p class="lede">The full history lives in <a href="/#colorado-150">Colorado at 150</a>. This is the skeleton.</p>
+      <p class="lede">The full history lives in <a href="/colorado-150th-anniversary-history/">Colorado at 150</a>. This is the skeleton.</p>
       <div class="tl">
         <div class="tl-i"><p class="tl-y">Before 1800</p><h4>Ute, Cheyenne, Arapaho and Ancestral Puebloan homelands</h4><p>The cliff dwellings at Mesa Verde were built and occupied centuries before any European arrived. The Ute have the longest continuous presence of any people in Colorado.</p></div>
         <div class="tl-i"><p class="tl-y">1851</p><h4>San Luis founded</h4><p>Hispano settlers moving north from New Mexico establish the oldest continuously occupied town in Colorado, twenty-five years before statehood.</p></div>
@@ -3104,66 +3122,13 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
   </div>
 </section>
 
-<section class="sec dark" id="contact">
+<section class="sec dark tight" id="contact">
   <div class="wrap">
-    <p class="slabel">Two ways in</p>
-    <h2 class="rv" style="text-align:center">Advertise, Or Contribute</h2>
-    <div class="read rv" style="text-align:center;margin-bottom:32px">
-      <p class="lede">Businesses that want to reach people planning Colorado trips, and Coloradans who know something we should be covering. Name, email, and what you want to say. That is all we need.</p>
-    </div>
-
-    <div class="formbox rv">
-      <form id="cwuForm" method="POST" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" novalidate>
-        <input type="hidden" name="_subject" value="New lead — coloradowhatsup.com">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_source" value="coloradowhatsup.com/about-colorado/">
-        <input type="hidden" name="_ts" id="_ts" value="">
-
-        <div class="hp" aria-hidden="true">
-          <label for="_honey">Leave this field empty</label>
-          <input type="text" name="_honey" id="_honey" tabindex="-1" autocomplete="off">
-        </div>
-
-        <div class="frow">
-          <div class="fld">
-            <label for="f_name">Name</label>
-            <input type="text" id="f_name" name="Name" required autocomplete="name" placeholder="What should we call you?">
-          </div>
-          <div class="fld">
-            <label for="f_email">Email</label>
-            <input type="email" id="f_email" name="Email" required autocomplete="email" placeholder="you@example.com">
-          </div>
-        </div>
-
-        <div class="fld">
-          <label for="f_type">What is this?</label>
-          <select id="f_type" name="Inquiry Type" required>
-            <option value="">Pick one&hellip;</option>
-            <option value="Advertising Inquiry">I want to advertise</option>
-            <option value="News Story Tip">I have a news or story tip</option>
-            <option value="Contribution">I want to write or contribute</option>
-            <option value="Correction">Something on this page is wrong</option>
-            <option value="Event Submission">I have an event to submit</option>
-            <option value="Other">Something else</option>
-          </select>
-        </div>
-
-        <div class="fld">
-          <label for="f_msg">Tell us</label>
-          <textarea id="f_msg" name="Message" required placeholder="A few sentences is plenty. If it is a correction, tell us what is wrong and how you know."></textarea>
-        </div>
-
-        <div class="fld">
-          <label for="f_phone">Phone <span style="opacity:.6">(optional &mdash; only if you want a call)</span></label>
-          <input type="tel" id="f_phone" name="Phone" autocomplete="tel" placeholder="(720) 000-0000">
-        </div>
-
-        <button type="submit" class="fsub" id="fBtn">Send It</button>
-        <p class="fmsg" id="fMsg" role="status" aria-live="polite"></p>
-        <p class="fnote">Three required fields, and one of them is your email so we can answer. Corrections get priority. We will not print your name on a story tip without asking first, and we do not sell or share anything you send. This form is protected against automated submissions.</p>
-      </form>
-      <iframe name="cwuSink" id="cwuSink" title="Form submission target" style="display:none;width:0;height:0;border:0" tabindex="-1" aria-hidden="true"></iframe>
+    <div class="read cta-band">
+      <p class="slabel">Get in touch</p>
+      <h2>Spotted A Change Or<br>A Colorado Event We Missed?</h2>
+      <p class="lede">Dates, closures and openings move every season. Corrections and event tips go through our contact page, and we update the page when we can confirm the change with the organizer or agency.</p>
+      <a class="gbtn solid" href="/contact/">Contact Colorado What's Up</a>
     </div>
   </div>
 </section>
@@ -3172,57 +3137,68 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
 
 <footer class="ftr">
   <div class="wrap">
-    <div class="ftr-grid">
+    <div class="ftr-grid ftr-grid5">
       <div>
-        <img class="ftr-logo" src="/images/colorado-whats-up-logo.png" width="300" height="102" alt="Colorado What's Up" loading="lazy">
-        <p class="ftr-p">Long-form guides to Colorado &mdash; how to camp here without wrecking it, how to read a mountain day, and what a hundred and fifty years actually built. Written in Colorado, sourced from public agencies.</p>
+        <img class="ftr-logo" src="/images/web/colorado-whats-up-logo.png" width="328" height="180" alt="Colorado What's Up" loading="lazy">
+        <p class="ftr-p">An independent guide to what is happening in Colorado &mdash; festivals, seasonal events, wildlife calendars and the long reads that explain how the state works. Written in Colorado and sourced from the organizers and agencies that set the dates.</p>
+        <p class="ftr-p">Companion guides: <a href="https://coloradowhattodo.com/">Colorado What To Do</a> (activities, regions and itineraries) and <a href="https://coloradocampingspots.com/">Colorado Camping Spots</a>.</p>
       </div>
       <div>
-        <h5>On This Page</h5>
+        <h5>Events &amp; Festivals</h5>
         <ul>
-          <li><a href="#697">The 697-sided state</a></li>
-          <li><a href="#symbols">Every state symbol</a></li>
-          <li><a href="#kids">Who chose the symbols</a></li>
-          <li><a href="#counties">All 64 counties</a></li>
-          <li><a href="#geography">How the geography works</a></li>
-          <li><a href="#say-it">How to say it</a></li>
-          <li><a href="#conditions">Live conditions</a></li>
-          <li><a href="#timeline">Colorado in 14 moments</a></li>
+          <li><a href="/colorado-events-calendar/">Colorado events calendar</a></li>
+          <li><a href="/colorado-music-festivals/">Music festivals</a></li>
+          <li><a href="/colorado-food-and-drink-festivals/">Food &amp; drink festivals</a></li>
+          <li><a href="/colorado-film-and-arts-festivals/">Film &amp; arts festivals</a></li>
+          <li><a href="/colorado-winter-festivals/">Winter festivals &amp; holiday lights</a></li>
+          <li><a href="/colorado-rodeos-fairs-western-events/">Rodeos, fairs &amp; western events</a></li>
+          <li><a href="/colorado-wildlife-watching-calendar/">Wildlife watching calendar</a></li>
         </ul>
       </div>
       <div>
-        <h5>Explore</h5>
+        <h5>Colorado Guides</h5>
         <ul>
-          <li><a href="/">All About Colorado</a></li>
-          <li><a href="/things-to-do-in-colorado/">Things To Do In Colorado</a></li>
-          <li><a href="/colorado-scenic-byways/">Colorado Scenic Byways</a></li>
-          <li><a href="/best-time-to-visit-colorado/">Best Time To Visit Colorado</a></li>
-          <li><a href="/#resources">Colorado Resources</a></li>
+          <li><a href="/leave-no-trace-colorado/">Pack It In, Pack It Out</a></li>
+          <li><a href="/colorado-150th-anniversary-history/">Colorado At 150</a></li>
+          <li><a href="/colorado-altitude-mountain-weather/">Reading A Mountain Day</a></li>
+          <li><a href="/colorado-2026-water-year-drought/">The 2026 Water Year</a></li>
+          <li><a href="/colorado-climbing-guide/">Boulders To Fourteeners</a></li>
+          <li><a href="/colorado-museums-science-dark-skies/">The Other Colorado</a></li>
+          <li><a href="/colorado-guides/">All Colorado guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Plan A Trip</h5>
+        <ul>
+          <li><a href="/things-to-do-in-colorado/">Things to do in Colorado</a></li>
+          <li><a href="/colorado-scenic-byways/">Colorado scenic byways</a></li>
+          <li><a href="/best-time-to-visit-colorado/">Best time to visit Colorado</a></li>
+          <li><a href="/colorado-traction-law/">Colorado traction law</a></li>
+          <li><a href="/about-colorado/">About Colorado</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>About This Site</h5>
+        <ul>
+          <li><a href="/about/">About this site</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/editorial-standards/">How we research</a></li>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms &amp; disclaimer</a></li>
           <li><a href="/sitemap.xml">Sitemap</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Network</h5>
-        <ul>
-          <li><a href="https://coloradocampingspots.com/" rel="noopener">Colorado Camping Spots</a></li>
-          <li><a href="https://actionglobalnews.com/" rel="noopener">Local &amp; global news</a></li>
-          <li><a href="https://gnomadpromotions.com/" rel="noopener">Promotional products</a></li>
-          <li><a href="https://linkrestaurants.com/" rel="noopener">Link Restaurants</a></li>
-          <li><a href="https://mysaleshelp.com/" rel="noopener">Sales training</a></li>
-          <li><a href="https://www.eyetoad.com/" rel="noopener">Eye To Ad Media</a></li>
         </ul>
       </div>
     </div>
 
     <div class="srcbox">
-      <b>Where our numbers come from</b>
-      Colorado General Assembly &middot; Colorado State Archives &middot; Colorado Department of Local Affairs &middot; U.S. Census Bureau &middot; U.S. Geological Survey &middot; Colorado Geological Survey &middot; National Weather Service &middot; National Park Service &middot; Bureau of Land Management &middot; USDA Natural Resources Conservation Service &middot; History Colorado.
-      Live observations on this page come directly from the National Weather Service public API and are not modified. County, symbol and boundary facts were verified in August 2026. If you find something wrong, use the form above &mdash; corrections get priority.
+      <b>Where our dates and numbers come from</b>
+      Event organizers&rsquo; official sites &middot; Colorado Tourism Office &middot; History Colorado &middot; National Park Service &middot; Colorado Parks &amp; Wildlife &middot; U.S. Fish &amp; Wildlife Service &middot; National Weather Service &middot; Colorado Department of Transportation &middot; U.S. Geological Survey &middot; Colorado Geological Survey.
+      Event dates, venues and ticketing change from year to year. Always confirm with the organizer before you travel.
     </div>
 
     <div class="ftr-bot">
-      <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. All rights reserved.</span>
-      <span>Edited by Zach Wennstedt &middot; Denver, Colorado &middot; <a href="#contact">Send us a message</a></span>
+      <span>&copy; <span id="yr">2026</span> ColoradoWhatsUp.com &mdash; Search Converts LLC. Edited by Zach Wennstedt, Denver, Colorado.</span>
+      <span><a href="/contact/">Contact</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; Site by <a href="https://eyetoad.com/" rel="nofollow">Eye To Ad Media</a></span>
     </div>
   </div>
 </footer>
@@ -3530,7 +3506,7 @@ h1.mhero-h em{font-style:normal;color:var(--gold)}
         show(true, "Sent. We'll get back to you shortly.");
         form.reset();
       })
-      .catch(function(){ show(false, 'That did not go through. Please call 1-800-481-8638.'); })
+      .catch(function(){ show(false, 'That did not go through. Please use the contact page.'); })
       .then(function(){ if(btn){ btn.disabled = false; btn.textContent = label; } });
   });
 })();
